@@ -3,9 +3,32 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<h2>Upload</h2>
 
-<form action="/Brand/UploadSubmit" method="post" enctype="multipart/form-data">
-    <input type="file" name="upload_file" />
-    <input type="submit" name="submit" value="submit" />
+<form id="upload" action="/Brand/UploadSubmit" method="post" enctype="multipart/form-data">
+    <div id="drop">
+				Drop Here
+
+				<a>Browse</a>
+				<input type="file" name="upload_file"  />
+			</div>
+    <ul>
+        <!-- <label for="startDate">Date :</label>
+    <input name="startDate" id="startDate" class="date-picker" /> -->
+
+   
+				<!-- The file uploads will be shown here -->
+			</ul>
+
+   
 </form>
+
+
+		<!-- The main CSS file -->
+		<link href="../assets/css/style.css" rel="stylesheet" />
+		<script src="../assets/js/jquery.knob.js"></script>
+		<!-- jQuery File Upload Dependencies -->
+		<script src="../assets/js/jquery.ui.widget.js"></script>
+		<script src="../assets/js/jquery.iframe-transport.js"></script>
+		<script src="../assets/js/jquery.fileupload.js"></script>
+		<!-- Our main JS file -->
+		<script src="../assets/js/script.js"></script>

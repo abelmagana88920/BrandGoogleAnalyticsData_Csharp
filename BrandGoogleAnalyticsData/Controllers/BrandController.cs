@@ -45,18 +45,33 @@ namespace BrandGoogleAnalyticsData.Controllers
         public ActionResult UploadSubmit(HttpPostedFileBase upload_file)
         {
             var path = "";
+            string status = "error";
             if (upload_file != null && upload_file.ContentLength > 0)
             {
                 // extract only the filename
                 var fileName = Path.GetFileName(upload_file.FileName);
+                var extension = Path.GetExtension(upload_file.FileName);
+                if (extension != ".zip") return new HttpStatusCodeResult(404);
+
                 // store the file inside ~/App_Data/uploads folder
                 path = Path.Combine(Server.MapPath("~/App_Data/uploads"), fileName);
                 upload_file.SaveAs(path);
+
+                if ((System.IO.File.Exists(path)))
+                {
+                    status = ZipRead(path);
+                }
+                if (status == "success") return new HttpStatusCodeResult(200);
+                else return new HttpStatusCodeResult(404);
+
+                
             }
 
-            string file = ZipRead(path);
+            return new HttpStatusCodeResult(404);
+           
 
-            return Content(file);
+            
+             
         }
 
         IFSReportingContext db = new IFSReportingContext();
@@ -98,7 +113,7 @@ namespace BrandGoogleAnalyticsData.Controllers
             localPathwofile = localPath + "\\..\\App_Data\\extracts";
         }
 
-        public JsonResult GAnalytics(string path)
+        public JsonResult GAnalytics(string path, int month, int year)
         {
             //string path = "C:\\Users\\Abel\\Downloads\\AugustAnalytics\\BMRACING.xlsx";
 
@@ -205,8 +220,8 @@ namespace BrandGoogleAnalyticsData.Controllers
                         if (insert && value != "")
                         {
                             Library.Execute(@"insert into tblBrandGoogleAanalyticsData 
-                                  (brand,group_field,subgroup_id, subgroup_field, name, value)
-                                    values('" + fileName + "','" + group_field + "','" + (index_column - 1) + "','" + subgroup_field_text + "','" + name + "','" + value + @"')
+                                  (brand,group_field,subgroup_id, subgroup_field, name, value, month, year)
+                                    values('" + fileName + "','" + group_field + "','" + (index_column - 1) + "','" + subgroup_field_text + "','" + name + "','" + value + "','"+month+"','"+year+@"')
                                 ");
                             // cell_data += "group_field: " + group_field + " subgroup_field:(" + (index_column - 1) + ")" + subgroup_field_text + " " + "name: " + name + " " + value;
                         }
@@ -242,46 +257,78 @@ namespace BrandGoogleAnalyticsData.Controllers
             GetPathParams(out localPath, out extractPath);
 
             string zipPath = @""+uploadfile_path+"";
-           
+
+            string month_year = Path.GetFileNameWithoutExtension(uploadfile_path);
+            string[] month_year_arr = month_year.Split('-');
+
+            int month;
+            int year;
+
+            try
+            {
+                month = DateTime.ParseExact(month_year_arr[0], "MMMM", System.Globalization.CultureInfo.InvariantCulture).Month;
+                year = Int32.Parse(month_year_arr[1]);
+            }
+            catch
+            {
+                return "error";
+            }
 
             // string extractPath = @"C:\\Users\\Abel\\Downloads\\extract";
             string files = "", extract_files_path = "";
             string content = @"";
             string filenameonly = "";
 
-            Library.Execute("delete from tblBrandGoogleAanalyticsData");
+            Library.Execute("delete from tblBrandGoogleAanalyticsData where month='"+month+"' and year='"+year+"'");
 
-
-            killProcessByName("Excel");
-            using (ZipArchive archive = ZipFile.OpenRead(zipPath))
+            try
             {
-                foreach (ZipArchiveEntry entry in archive.Entries)
+                killProcessByName("Excel");
+                using (ZipArchive archive = ZipFile.OpenRead(zipPath))
                 {
-                    if (entry.FullName.EndsWith(".xlsx", StringComparison.OrdinalIgnoreCase))
+                    bool havingexcel_files = false;
+                    foreach (ZipArchiveEntry entry in archive.Entries)
                     {
-                        filenameonly = Path.GetFileName(entry.FullName);
-
-
-                        files += filenameonly;
-                        extract_files_path = extractPath + "\\" + filenameonly;
-
-
-
-                        if ((System.IO.File.Exists(extract_files_path)))
+                        if (entry.FullName.EndsWith(".xlsx", StringComparison.OrdinalIgnoreCase))
                         {
-                            System.IO.File.Delete(extract_files_path);
-                        }
-                        entry.ExtractToFile(Path.Combine(extractPath, filenameonly));
-                        //content += extract_files_path;
+                            havingexcel_files = true;
 
-                        content += new JavaScriptSerializer().Serialize(GAnalytics(extract_files_path).Data);
+                            filenameonly = Path.GetFileName(entry.FullName);
+
+
+                            files += filenameonly;
+                            extract_files_path = extractPath + "\\" + month + "-"+ year + "-" + filenameonly;
+
+                            if ((System.IO.File.Exists(extract_files_path)))
+                            {
+                                System.IO.File.Delete(extract_files_path);
+                            }
+
+                            if (!extract_files_path.ToLower().Contains('~')) //if ~ does not contaimn
+                            {
+                                entry.ExtractToFile(Path.Combine(extractPath, month + "-" + year + "-" + filenameonly));
+                                //content += extract_files_path;
+                                content += new JavaScriptSerializer().Serialize(GAnalytics(extract_files_path, month, year).Data);
+                            }
+                        }
                     }
+                    if (!havingexcel_files)
+                    {
+                        killProcessByName("Excel");
+                        return "error";
+                    } 
                 }
+
+                killProcessByName("Excel");
+                return "success";
+            }
+           catch
+            {
+                return "error";
             }
 
-            killProcessByName("Excel");
 
-            return content;
+           
         }
 
 
