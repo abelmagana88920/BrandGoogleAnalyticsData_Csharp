@@ -1,0 +1,143 @@
+﻿@{
+    Layout = null;
+}
+
+@{
+    string controller = HttpContext.Current.Request.RequestContext.RouteData.Values["controller"].ToString();
+    string method = HttpContext.Current.Request.RequestContext.RouteData.Values["action"].ToString();
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width" />
+    <meta name="description" content="">
+    <meta name="author" content="jettcalleja">
+    <title>Inventory Feed</title>
+    @Styles.Render("~/Content/css")
+    @Styles.Render("~/Content/themes/base/css")
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600' rel='stylesheet' type='text/css'>
+    <link href="//netdna.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.css" rel="stylesheet">
+</head>
+<body>
+    <div class="testbox">
+        <h1>Inventory Feed Form</h1>
+
+        <form id="customerForm" name="customer" action="/" method="POST">
+            <input type="hidden" name="controller"  value="@controller" />
+             <input type="hidden" name="method"  value="@method" />
+            <hr>
+            <div class="accounttype">
+                <input type="radio" value="XLS" id="radioOne" name="type" checked />
+                <label for="radioOne" class="radio" checked >Excel &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                <input type="radio" value="CSV" id="radioTwo" name="type"  />
+                <label for="radioTwo" class="radio">CSV</label>
+            </div>
+            <div class="idtype">
+                <input type="radio" value="aaid" id="aaid" name="sendid" checked />
+                <label for="aaid" class="radio" checked>AAID ID</label>
+                <input type="radio" value="brandid" id="brandid" name="sendid" />
+                <label for="brandid" class="radio">Brand ID</label>
+            </div>
+            <hr>
+            <label id="icon" for="name"><i class="fa fa-hashtag" aria-hidden="true"></i></label>
+            <input type="text" name="name" id="cnumber" placeholder="Customer Number" required/>
+            <label id="icon" for="name"><i class="fa fa-user" aria-hidden="true"></i></label>
+            <input type="text" name="name" id="cname" placeholder="Customer Name" required/>
+            <div class="gender">
+                <input type="radio" class="sendvia" value="email" id="email" name="sendvia" checked />
+                <label for="email" class="radio" chec>Email</label>
+                <input type="radio" class="sendvia" value="ftp" id="ftp" name="sendvia" />
+                <label for="ftp" class="radio">FTP</label>
+            </div>
+            <!-- EMAIL FORM -->
+            <label id="icon" for="ftp" class="email"><i class="fa fa-at" aria-hidden="true"></i></label>
+            <input type="email" class="email last" name="email" id="email_address" placeholder="Email" required/> 
+            <!-- END OF EMAIL FORM -->
+            <!-- FTP FORM -->
+            <label id="icon" for="ftp" class="ftplabel labelhide"><i class="fa fa-globe" aria-hidden="true"></i></label>
+            <input type="text" class="ftpform labelhide" name="ftphostname" id="ftphostname" placeholder="Hostname" required />
+
+            <label id="icon" for="ftp" class="ftplabel labelhide"><i class="fa fa-user" aria-hidden="true"></i></label>
+            <input type="text" class="ftpform labelhide" name="ftpusername" id="ftpusername" placeholder="Username" required />
+
+            <label id="icon" for="ftp" class="ftplabel labelhide"><i class="fa fa-shield" aria-hidden="true"></i></label>
+            <input type="password" class="ftpform labelhide" name="ftppassword" id="ftppassword" placeholder="Password" required />
+
+            <label id="icon" for="ftp" class="ftplabel labelhide"><i class="fa fa-folder-open" aria-hidden="true"></i></label>
+            <input type="text" class="ftpform labelhide last" name="ftpfolder" id="ftpfolder" placeholder="Specify Folder" required/>
+
+            <!-- END OF FTP FORM -->
+
+            <h4 class="cblabel">Send Buyer's Part No</h4><br />
+            <div class="cbdiv">
+                <input type="radio" value="yesbuyer" id="nobuyer" name="buyer" checked />
+                <label for="nobuyer" class="radio" chec>Yes</label>
+                <input type="radio" value="nobuyer" id="yesbuy" name="buyer" />
+                <label for="yesbuy" class="radio">No</label>
+            </div>
+
+            <h4 class="cblabel">Include Column Headers</h4><br />
+            <div class="cbdiv">
+                <input type="radio" value="yesheader" id="yesheader" name="header" checked />
+                <label for="yesheader" class="radio" chec>Yes</label>
+                <input type="radio" value="noheader" id="noheader" name="header" />
+                <label for="noheader" class="radio">No</label>
+            </div>
+
+            <div id="timediv">
+                <div class="time0">
+                    <label id="icon" for="name"><i class="fa fa-clock-o" aria-hidden="true"></i></label>
+                    <input type="time" name="time[]" id="time-0"  required/>
+                    <button class="add" data-add="time" for="name" type="button"><i class="fa fa-plus" aria-hidden="true"></i></button> <br />
+                </div>
+            </div>
+            <br />
+             <div id="daydiv">
+                <div class="day0">
+                    <label id="icon" for="name"><i class="fa fa-clock-o" aria-hidden="true"></i></label>
+                    <select id="day-0" name="day[]">
+                        <option value="Mon,Tue,Wed,Thu,Fri" selected>REGULAR DAYS</option>
+                        <option value="Sat,Sun">WEEKEND</option>
+                        <option value="Mon">Monday</option>
+                        <option value="Tue">Tuesday</option>
+                        <option value="Wed">Wednesday</option>
+                        <option value="Thu">Thursday</option>
+                        <option value="Fri">Friday</option>
+                        <option value="Sat">Saturday</option>
+                        <option value="Sun">Sunday</option>
+                    </select>
+                    <button class="add" data-add="day" for="name" type="button"><i class="fa fa-plus" aria-hidden="true"></i></button> <br />
+                </div>
+            </div>
+
+            <h4 class="formatlabel">Format File</h4><br />
+            <div id="filediv">
+                <div class="file0">
+                    <label id="icon" for="name"><i class="fa fa-file-excel-o" aria-hidden="true"></i></label>
+                    <select id="field-0" name="field[]">
+                        <option value="PART_NO">Part Number</option>
+                        <option value="INVOICED_QTY">Quantity</option>
+                        <option value="upc">UPC Code</option>
+                        <option value="brand">Brand Code</option>
+                    </select>
+                    <button class="add" data-add="file" for="name" type="button"><i class="fa fa-plus" aria-hidden="true"></i></button>
+                </div>
+            </div>
+
+            <br/> <br/>
+            <p>By clicking Submit, you agree on our <a href="#">terms and condition</a>.</p>
+           
+            <button class="button" id="submit" type="submit">Submit</button>
+
+        </form>
+    </div>
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/jqueryui")
+    @Scripts.Render("~/bundles/jqueryval")
+    @Scripts.Render("~/bundles/mainscript")
+</body>
+</html>

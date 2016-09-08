@@ -1,0 +1,42 @@
+﻿Installing assembly 'C:\Users\Abel\Documents\Visual Studio 2012\Projects\InventoryFeedService\InventoryFeedService\bin\Debug\InventoryFeedService.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = C:\Users\Abel\Documents\Visual Studio 2012\Projects\InventoryFeedService\InventoryFeedService\bin\Debug\InventoryFeedService.InstallLog
+   assemblypath = C:\Users\Abel\Documents\Visual Studio 2012\Projects\InventoryFeedService\InventoryFeedService\bin\Debug\InventoryFeedService.exe
+Installing service Inventory Feed Service...
+Service Inventory Feed Service has been successfully installed.
+Creating EventLog source Inventory Feed Service in log Application...
+Committing assembly 'C:\Users\Abel\Documents\Visual Studio 2012\Projects\InventoryFeedService\InventoryFeedService\bin\Debug\InventoryFeedService.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = C:\Users\Abel\Documents\Visual Studio 2012\Projects\InventoryFeedService\InventoryFeedService\bin\Debug\InventoryFeedService.InstallLog
+   assemblypath = C:\Users\Abel\Documents\Visual Studio 2012\Projects\InventoryFeedService\InventoryFeedService\bin\Debug\InventoryFeedService.exe
+Uninstalling assembly 'C:\Users\Abel\Documents\Visual Studio 2012\Projects\InventoryFeedService\InventoryFeedService\bin\Debug\InventoryFeedService.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = C:\Users\Abel\Documents\Visual Studio 2012\Projects\InventoryFeedService\InventoryFeedService\bin\Debug\InventoryFeedService.InstallLog
+   assemblypath = C:\Users\Abel\Documents\Visual Studio 2012\Projects\InventoryFeedService\InventoryFeedService\bin\Debug\InventoryFeedService.exe
+Removing EventLog source Inventory Feed Service.
+Service Inventory Feed Service is being removed from the system...
+Service Inventory Feed Service was successfully removed from the system.
+Installing assembly 'C:\Users\Abel\Downloads\InventoryFeed\InventoryFeed\Service\InventoryFeedService.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = C:\Users\Abel\Downloads\InventoryFeed\InventoryFeed\Service\InventoryFeedService.InstallLog
+   assemblypath = C:\Users\Abel\Downloads\InventoryFeed\InventoryFeed\Service\InventoryFeedService.exe
+Installing service Inventory Feed Service...
+Service Inventory Feed Service has been successfully installed.
+Creating EventLog source Inventory Feed Service in log Application...
+Committing assembly 'C:\Users\Abel\Downloads\InventoryFeed\InventoryFeed\Service\InventoryFeedService.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = C:\Users\Abel\Downloads\InventoryFeed\InventoryFeed\Service\InventoryFeedService.InstallLog
+   assemblypath = C:\Users\Abel\Downloads\InventoryFeed\InventoryFeed\Service\InventoryFeedService.exe
+Uninstalling assembly 'C:\Users\Abel\Downloads\InventoryFeed\InventoryFeed\Service\InventoryFeedService.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = C:\Users\Abel\Downloads\InventoryFeed\InventoryFeed\Service\InventoryFeedService.InstallLog
+   assemblypath = C:\Users\Abel\Downloads\InventoryFeed\InventoryFeed\Service\InventoryFeedService.exe
+Removing EventLog source Inventory Feed Service.
+Service Inventory Feed Service is being removed from the system...
+Service Inventory Feed Service was successfully removed from the system.

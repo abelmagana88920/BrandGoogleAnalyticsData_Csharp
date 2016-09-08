@@ -1,0 +1,42 @@
+﻿
+Running a transacted installation.
+
+Beginning the Install phase of the installation.
+See the contents of the log file for the C:\Users\Abel\Documents\Visual Studio 2012\Projects\InventoryFeedService\InventoryFeedService\bin\Debug\InventoryFeedService.exe assembly's progress.
+The file is located at C:\Users\Abel\Documents\Visual Studio 2012\Projects\InventoryFeedService\InventoryFeedService\bin\Debug\InventoryFeedService.InstallLog.
+
+The Install phase completed successfully, and the Commit phase is beginning.
+See the contents of the log file for the C:\Users\Abel\Documents\Visual Studio 2012\Projects\InventoryFeedService\InventoryFeedService\bin\Debug\InventoryFeedService.exe assembly's progress.
+The file is located at C:\Users\Abel\Documents\Visual Studio 2012\Projects\InventoryFeedService\InventoryFeedService\bin\Debug\InventoryFeedService.InstallLog.
+
+The Commit phase completed successfully.
+
+The transacted install has completed.
+
+
+The uninstall is beginning.
+See the contents of the log file for the C:\Users\Abel\Documents\Visual Studio 2012\Projects\InventoryFeedService\InventoryFeedService\bin\Debug\InventoryFeedService.exe assembly's progress.
+The file is located at C:\Users\Abel\Documents\Visual Studio 2012\Projects\InventoryFeedService\InventoryFeedService\bin\Debug\InventoryFeedService.InstallLog.
+
+The uninstall has completed.
+
+Running a transacted installation.
+
+Beginning the Install phase of the installation.
+See the contents of the log file for the C:\Users\Abel\Downloads\InventoryFeed\InventoryFeed\Service\InventoryFeedService.exe assembly's progress.
+The file is located at C:\Users\Abel\Downloads\InventoryFeed\InventoryFeed\Service\InventoryFeedService.InstallLog.
+
+The Install phase completed successfully, and the Commit phase is beginning.
+See the contents of the log file for the C:\Users\Abel\Downloads\InventoryFeed\InventoryFeed\Service\InventoryFeedService.exe assembly's progress.
+The file is located at C:\Users\Abel\Downloads\InventoryFeed\InventoryFeed\Service\InventoryFeedService.InstallLog.
+
+The Commit phase completed successfully.
+
+The transacted install has completed.
+
+
+The uninstall is beginning.
+See the contents of the log file for the C:\Users\Abel\Downloads\InventoryFeed\InventoryFeed\Service\InventoryFeedService.exe assembly's progress.
+The file is located at C:\Users\Abel\Downloads\InventoryFeed\InventoryFeed\Service\InventoryFeedService.InstallLog.
+
+The uninstall has completed.

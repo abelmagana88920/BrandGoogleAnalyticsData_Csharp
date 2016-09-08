@@ -1,0 +1,78 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="IFSReportingModel" Alias="Self" p1:UseStrongSpatialTypes="false" xmlns="http://schemas.microsoft.com/ado/2009/11/edm" xmlns:p1="http://schemas.microsoft.com/ado/2009/02/edm/annotation">
+  <EntityContainer Name="IFSReportingContext" p1:LazyLoadingEnabled="true">
+    <EntitySet Name="tblInvoiceLinesMasters" EntityType="IFSReportingModel.tblInvoiceLinesMaster" />
+  </EntityContainer>
+  <EntityType Name="tblInvoiceLinesMaster">
+    <Key>
+      <PropertyRef Name="STATISTIC_NO" />
+    </Key>
+    <Property Name="STATISTIC_NO" Type="Double" Nullable="false" />
+    <Property Name="STATISTIC_DATE" Type="DateTime" Precision="3" />
+    <Property Name="INVOICE_ID" Type="Double" />
+    <Property Name="ITEM_ID" Type="Double" />
+    <Property Name="INVOICE_DATE" Type="DateTime" Precision="3" />
+    <Property Name="INVOICED_QTY" Type="Double" />
+    <Property Name="COST" Type="Double" />
+    <Property Name="SALE_UNIT_PRICE" Type="Double" />
+    <Property Name="DISCOUNT" Type="Double" />
+    <Property Name="BASE_SALE_UNIT_PRICE" Type="Double" />
+    <Property Name="CURR_DISCOUNT" Type="Double" />
+    <Property Name="ORDER_DISCOUNT" Type="Double" />
+    <Property Name="ORDER_CURR_DISCOUNT" Type="Double" />
+    <Property Name="NET_AMOUNT" Type="Double" />
+    <Property Name="PRICE_QTY" Type="Double" />
+    <Property Name="NET_CURR_AMOUNT" Type="Double" />
+    <Property Name="GROSS_AMOUNT" Type="Double" />
+    <Property Name="GROSS_CURR_AMOUNT" Type="Double" />
+    <Property Name="CATALOG_DESC" Type="String" MaxLength="200" Unicode="false" FixedLength="false" />
+    <Property Name="CUSTOMER_NAME" Type="String" MaxLength="100" Unicode="false" FixedLength="false" />
+    <Property Name="COUNTRY_DESC" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="CUST_GRP_DESC" Type="String" MaxLength="35" Unicode="false" FixedLength="false" />
+    <Property Name="COMPANY_NAME" Type="String" MaxLength="100" Unicode="false" FixedLength="false" />
+    <Property Name="MARKET_DESC" Type="String" MaxLength="35" Unicode="false" FixedLength="false" />
+    <Property Name="REGION_DESC" Type="String" MaxLength="35" Unicode="false" FixedLength="false" />
+    <Property Name="DISTRICT_DESC" Type="String" MaxLength="35" Unicode="false" FixedLength="false" />
+    <Property Name="SALESMAN" Type="String" MaxLength="100" Unicode="false" FixedLength="false" />
+    <Property Name="AUTHORIZE_NAME" Type="String" MaxLength="100" Unicode="false" FixedLength="false" />
+    <Property Name="PRICE_LIST_DESC" Type="String" MaxLength="35" Unicode="false" FixedLength="false" />
+    <Property Name="ORDER_NO" Type="String" MaxLength="12" Unicode="false" FixedLength="false" />
+    <Property Name="CATALOG_GROUP_DESC" Type="String" MaxLength="35" Unicode="false" FixedLength="false" />
+    <Property Name="CUSTOMER_NO" Type="String" MaxLength="20" Unicode="false" FixedLength="false" />
+    <Property Name="CUST_GRP" Type="String" MaxLength="10" Unicode="false" FixedLength="false" />
+    <Property Name="CONTRACT" Type="String" MaxLength="5" Unicode="false" FixedLength="false" />
+    <Property Name="CATALOG_NO" Type="String" MaxLength="25" Unicode="false" FixedLength="false" />
+    <Property Name="PART_NO" Type="String" MaxLength="25" Unicode="false" FixedLength="false" />
+    <Property Name="PRICE_LIST_NO" Type="String" MaxLength="10" Unicode="false" FixedLength="false" />
+    <Property Name="AUTHORIZE_CODE" Type="String" MaxLength="20" Unicode="false" FixedLength="false" />
+    <Property Name="SALESMAN_CODE" Type="String" MaxLength="20" Unicode="false" FixedLength="false" />
+    <Property Name="DISTRICT_CODE" Type="String" MaxLength="10" Unicode="false" FixedLength="false" />
+    <Property Name="REGION_CODE" Type="String" MaxLength="10" Unicode="false" FixedLength="false" />
+    <Property Name="MARKET_CODE" Type="String" MaxLength="10" Unicode="false" FixedLength="false" />
+    <Property Name="COMPANY" Type="String" MaxLength="20" Unicode="false" FixedLength="false" />
+    <Property Name="SALES_UNIT_MEAS" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="PRICE_UNIT_MEAS" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="ACCT_CURRENCY_CODE" Type="String" MaxLength="3" Unicode="false" FixedLength="false" />
+    <Property Name="ORDER_CURRENCY_CODE" Type="String" MaxLength="3" Unicode="false" FixedLength="false" />
+    <Property Name="COUNTRY_CODE" Type="String" MaxLength="2" Unicode="false" FixedLength="false" />
+    <Property Name="CATALOG_GROUP" Type="String" MaxLength="10" Unicode="false" FixedLength="false" />
+    <Property Name="PART_DESC" Type="String" MaxLength="200" Unicode="false" FixedLength="false" />
+    <Property Name="LINE_NO" Type="String" MaxLength="4" Unicode="false" FixedLength="false" />
+    <Property Name="REL_NO" Type="String" MaxLength="4" Unicode="false" FixedLength="false" />
+    <Property Name="LINE_ITEM_NO" Type="Double" />
+    <Property Name="PAYER_NO" Type="String" MaxLength="20" Unicode="false" FixedLength="false" />
+    <Property Name="PAYER_NAME" Type="String" MaxLength="100" Unicode="false" FixedLength="false" />
+    <Property Name="CUSTOMER_PRICE_GROUP" Type="String" MaxLength="10" Unicode="false" FixedLength="false" />
+    <Property Name="CUSTOMER_PRICE_GRP_DESC" Type="String" MaxLength="35" Unicode="false" FixedLength="false" />
+    <Property Name="ADDITIONAL_DISCOUNT" Type="Double" />
+    <Property Name="ADDITIONAL_CURR_DISCOUNT" Type="Double" />
+    <Property Name="BRANCH" Type="String" MaxLength="20" Unicode="false" FixedLength="false" />
+    <Property Name="CREATION_DATE" Type="DateTime" Precision="3" />
+    <Property Name="INVOICE_NO" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="SERIES_ID" Type="String" MaxLength="20" Unicode="false" FixedLength="false" />
+    <Property Name="CONDITION_CODE" Type="String" MaxLength="10" Unicode="false" FixedLength="false" />
+    <Property Name="CONDITION_CODE_DESCRIPTION" Type="String" MaxLength="35" Unicode="false" FixedLength="false" />
+    <Property Name="OBJID" Type="String" MaxLength="18" Unicode="false" FixedLength="false" />
+    <Property Name="OBJVERSION" Type="String" MaxLength="2000" Unicode="false" FixedLength="false" />
+  </EntityType>
+</Schema>

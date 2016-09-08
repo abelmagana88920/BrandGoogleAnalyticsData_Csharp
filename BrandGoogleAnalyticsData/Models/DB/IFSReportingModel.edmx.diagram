@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="7d810a227fb14e12bd47e49f2ec76e95" Name="Diagram1">
+        <EntityTypeShape EntityType="IFSReportingModel.tblInventoryLog" Width="1.5" PointX="2.625" PointY="2.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="IFSReportingModel.tblInvoiceLinesMaster" Width="1.5" PointX="4.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="IFSReportingModel.tblInventoryFeedProcess" Width="1.5" PointX="6.5770557870050226" PointY="12.964501640277216" />
+        <EntityTypeShape EntityType="IFSReportingModel.tblInventoryFeed" Width="1.5" PointX="5.6808588996906106" PointY="14.821257374631827" />
+        <EntityTypeShape EntityType="IFSReportingModel.tblBrandGoogleAanalyticsData" Width="1.5" PointX="3.3513673540909625" PointY="20.323847154306176" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
