@@ -87,11 +87,30 @@
                 <input type="radio" value="noheader" id="noheader" name="header" />
                 <label for="noheader" class="radio">No</label>
             </div>
+
             <div id="timediv">
                 <div class="time0">
                     <label id="icon" for="name"><i class="fa fa-clock-o" aria-hidden="true"></i></label>
                     <input type="time" name="time[]" id="time-0"  required/>
                     <button class="add" data-add="time" for="name" type="button"><i class="fa fa-plus" aria-hidden="true"></i></button> <br />
+                </div>
+            </div>
+            <br />
+             <div id="daydiv">
+                <div class="day0">
+                    <label id="icon" for="name"><i class="fa fa-clock-o" aria-hidden="true"></i></label>
+                    <select id="day-0" name="day[]">
+                        <option value="Mon,Tue,Wed,Thu,Fri" selected>REGULAR DAYS</option>
+                        <option value="Sat,Sun">WEEKEND</option>
+                        <option value="Mon">Monday</option>
+                        <option value="Tue">Tuesday</option>
+                        <option value="Wed">Wednesday</option>
+                        <option value="Thu">Thursday</option>
+                        <option value="Fri">Friday</option>
+                        <option value="Sat">Saturday</option>
+                        <option value="Sun">Sunday</option>
+                    </select>
+                    <button class="add" data-add="day" for="name" type="button"><i class="fa fa-plus" aria-hidden="true"></i></button> <br />
                 </div>
             </div>
 

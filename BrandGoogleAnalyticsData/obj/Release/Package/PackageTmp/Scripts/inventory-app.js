@@ -28,7 +28,7 @@
         if (sendvia === 'ftp') {
             $('.testbox').css("height", 970 + addHeight * 40);
         } else {
-            $('.testbox').css("height", 810 + addHeight * 40);
+            $('.testbox').css("height", 880 + addHeight * 40);
         }
     };
 
@@ -49,8 +49,10 @@
     var inventoryApp = {
         time: 0,
         file: 0,
+        day: 0,
         timeForm: [],
-        fileForm: []
+        fileForm: [],
+        dayForm: []
     };
 
  
@@ -162,6 +164,9 @@
         time = tempArray.join();
 
 
+        var day = $("select[name='day[]']")
+              .map(function () { return $(this).val(); }).get();
+
         var field = $("select[name='field[]']")
               .map(function () { return $(this).val(); }).get();
 
@@ -238,7 +243,8 @@
             buyer: buyer,
             header: header,
             time: time,
-            field: field
+            field: field,
+            day: day
         };
 
 
@@ -255,12 +261,16 @@
     });
 
     var removeButton = $(".minus");
-    removeButton.on('click',function () {
+    removeButton.on('click', function () {
+
         $('.testbox').css("height", $('.testbox').height() - 40);
         $(this).parent().remove();
+  
     });
 
     $(".add").on('click', function (e) {
+       
+
         e.preventDefault();
         var toAdd = $(this).data('add');
 
@@ -273,16 +283,70 @@
             var index = inventoryApp[toAdd + 'Form'].indexOf(toAdd + '-' + intId);
             i++;
         }
-
+       
+         
         var fieldWrapper = $("<div class=\"" + toAdd + "\"/>");
         if (toAdd === 'time') {
             var fName = $("<input type=\"time\" class=\"newfield\" id=\"time-" + intId + "\" name=\"time[]\"  required/>");
 
-        } else {
+        } else if (toAdd === 'day') {
+
+            var day = $("select[name='day[]']")
+              .map(function () { return $(this).val(); }).get();
+
+            console.log(day);
+            //if not found
+            var option = "";
+            var reg_days = false;
+            var weekend_days = false;
+
+            var cond_reg = $.inArray('Mon', day) < 0 && $.inArray('Tue', day) < 0 && $.inArray('Wed', day) < 0 && $.inArray('Thu', day) < 0 && $.inArray('Fri', day) < 0;
+            if ($.inArray('Mon,Tue,Wed,Thu,Fri', day) != 0 && $.inArray('Mon,Tue,Wed,Thu,Fri', day) < 0 && cond_reg) {
+                option += "<option value=\"Mon,Tue,Wed,Thu,Fri\" >REGULAR DAYS</option>";
+                reg_days = true;
+            }
+            if (!cond_reg) reg_days = true;
+
+
+            var cond_week = $.inArray('Sat', day) < 0 && $.inArray('Sun', day) < 0;
+            if ($.inArray('Sat,Sun', day) != 0 && $.inArray('Sat,Sun', day) < 0 && cond_week) {
+                option += "<option value=\"Sat,Sun\">WEEKEND</option>";
+                weekend_days = true;
+            }
+            if (!cond_week) weekend_days = true;
+
+            if (reg_days != false) {
+                if ($.inArray('Mon', day) != 0 && $.inArray('Mon', day) < 0) option += "<option value=\"Mon\">Monday</option>";
+                if ($.inArray('Tue', day) != 0 && $.inArray('Tue', day) < 0) option += "<option value=\"Tue\">Tuesday</option>";
+                if ($.inArray('Wed', day) != 0 && $.inArray('Wed', day) < 0) option += "<option value=\"Wed\">Wednesday</option>";
+                if ($.inArray('Thu', day) != 0 && $.inArray('Thu', day) < 0) option += "<option value=\"Thu\">Thursday</option>";
+                if ($.inArray('Fri', day) != 0 && $.inArray('Fri', day) < 0) option += "<option value=\"Fri\">Friday</option>";
+            }
+
+            if (weekend_days != false) {
+                if ($.inArray('Sat', day) != 0 && $.inArray('Sat', day) < 0) option += "<option value=\"Sat\">Saturday</option>";
+                if ($.inArray('Sun', day) != 0 && $.inArray('Sun', day) < 0) option += "<option value=\"Sun\">Sunday</option>";
+            }
+            console.log(option);
+
+            /*for (var i_r = 0; i_r < intId; i_r++) {
+                $("#day-" + i_r).prop('disabled', true);
+            } */
+
+            //
+
+            var fName = $("<select class=\"newfield\" id=\"day-" + intId + "\" name=\"day[]\" /></select>");
+            var options = $(
+                          option
+                          );
+            fName.append(options);
+
+        }
+        else if (toAdd === 'file') {
             var fName = $("<select class=\"newfield\" id=\"field-" + intId + "\" name=\"field[]\" /></select>");
-            var options = $(" <option value=\"PART_NO\">Part Number</option>"+
-                       "<option value=\"INVOICED_QTY\">Quantity</option>"+
-                       "<option value=\"upc\">UPC Code</option>"+
+            var options = $(" <option value=\"PART_NO\">Part Number</option>" +
+                       "<option value=\"INVOICED_QTY\">Quantity</option>" +
+                       "<option value=\"upc\">UPC Code</option>" +
                         "<option value=\"brand\">Brand Code</option>"
                           );
             fName.append(options);
@@ -332,10 +396,10 @@
         if (selected === 'ftp') {
             $('.testbox').css("height", 970 + addHeight * 40);
         } else {
-            $('.testbox').css("height", 810 + addHeight * 40);
+            $('.testbox').css("height", 880 + addHeight * 40);
         }
 
-        
+       
             $('.testbox').toggleClass('ftp');
           
             $('.ftplabel').toggleClass('labelhide');

@@ -32,3 +32,4 @@ C:\Users\Abel\Downloads\GoogleAnalytic_Test\BrandGoogleAnalyticsData\bin\BrandGo
 C:\Users\Abel\Downloads\GoogleAnalytic_Test\BrandGoogleAnalyticsData\bin\BrandGoogleAnalyticsData.pdb
 C:\Users\Abel\Downloads\GoogleAnalytic_Test\BrandGoogleAnalyticsData\obj\Debug\BrandGoogleAnalyticsData.dll
 C:\Users\Abel\Downloads\GoogleAnalytic_Test\BrandGoogleAnalyticsData\obj\Debug\BrandGoogleAnalyticsData.pdb
+C:\Users\Abel\Downloads\GoogleAnalytic_Test\BrandGoogleAnalyticsData\obj\Debug\BrandGoogleAnalyticsData.csprojResolveAssemblyReference.cache

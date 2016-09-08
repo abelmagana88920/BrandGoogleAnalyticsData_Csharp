@@ -103,7 +103,7 @@ html{
 .testbox {
   margin: 20px auto;
   width: 343px; 
-  height: 810px; 
+  height: 880px; 
   transition: height 0.25s;
   -webkit-border-radius: 8px/7px; 
   -moz-border-radius: 8px/7px; 

@@ -9,6 +9,7 @@
         <EntityTypeShape EntityType="IFSReportingModel.tblInvoiceLinesMaster" Width="1.5" PointX="4.75" PointY="0.75" IsExpanded="true" />
         <EntityTypeShape EntityType="IFSReportingModel.tblInventoryFeedProcess" Width="1.5" PointX="6.5770557870050226" PointY="12.964501640277216" />
         <EntityTypeShape EntityType="IFSReportingModel.tblInventoryFeed" Width="1.5" PointX="5.6808588996906106" PointY="14.821257374631827" />
+        <EntityTypeShape EntityType="IFSReportingModel.tblBrandGoogleAanalyticsData" Width="1.5" PointX="3.3513673540909625" PointY="20.323847154306176" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>

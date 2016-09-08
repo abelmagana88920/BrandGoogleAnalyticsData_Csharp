@@ -112,5 +112,20 @@
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
+    <EntitySetMapping Name="tblBrandGoogleAanalyticsDatas">
+      <EntityTypeMapping TypeName="IFSReportingModel.tblBrandGoogleAanalyticsData">
+        <MappingFragment StoreEntitySet="tblBrandGoogleAanalyticsData">
+          <ScalarProperty Name="year" ColumnName="year" />
+          <ScalarProperty Name="month" ColumnName="month" />
+          <ScalarProperty Name="value" ColumnName="value" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="subgroup_field" ColumnName="subgroup_field" />
+          <ScalarProperty Name="subgroup_id" ColumnName="subgroup_id" />
+          <ScalarProperty Name="group_field" ColumnName="group_field" />
+          <ScalarProperty Name="brand" ColumnName="brand" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
   </EntityContainerMapping>
 </Mapping>

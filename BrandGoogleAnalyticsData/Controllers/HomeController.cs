@@ -13,7 +13,7 @@ namespace BrandGoogleAnalyticsData.Controllers
        // [Authorize]
         public ActionResult Index()
         {
-            return RedirectToAction("Feed", "Customer");
+            return RedirectToAction("Upload", "Brand");
         }
 
     }

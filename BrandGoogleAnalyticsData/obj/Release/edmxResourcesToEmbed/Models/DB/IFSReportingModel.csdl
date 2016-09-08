@@ -5,6 +5,7 @@
     <EntitySet Name="tblInvoiceLinesMasters" EntityType="IFSReportingModel.tblInvoiceLinesMaster" />
     <EntitySet Name="tblInventoryFeedProcesses" EntityType="IFSReportingModel.tblInventoryFeedProcess" />
     <EntitySet Name="tblInventoryFeeds" EntityType="IFSReportingModel.tblInventoryFeed" />
+    <EntitySet Name="tblBrandGoogleAanalyticsDatas" EntityType="IFSReportingModel.tblBrandGoogleAanalyticsData" />
   </EntityContainer>
   <EntityType Name="tblInventoryLog">
     <Key>
@@ -112,5 +113,19 @@
     <Property Type="String" Name="fields" MaxLength="Max" FixedLength="false" Unicode="true" />
     <Property Type="String" Name="includeheaders" MaxLength="50" FixedLength="false" Unicode="true" />
     <Property Type="String" Name="sendday" MaxLength="50" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="tblBrandGoogleAanalyticsData">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Type="Int32" Name="id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="brand" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="group_field" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="Int32" Name="subgroup_id" />
+    <Property Type="String" Name="subgroup_field" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="name" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="value" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="Int32" Name="month" />
+    <Property Type="Int32" Name="year" />
   </EntityType>
 </Schema>
