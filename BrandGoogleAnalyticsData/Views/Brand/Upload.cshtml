@@ -6,10 +6,12 @@
 
 <form id="upload" action="/Brand/UploadSubmit" method="post" enctype="multipart/form-data">
     <div id="drop">
-				Drop Here
-
-				<a>Browse</a>
-				<input type="file" name="upload_file"  />
+              <input type="textbox" id="valid" value="false"  />
+				<a id="browse" style="display:block;">Browse</a>
+                <a id="wait" style="display:none;">Wait</a>
+				<input type="file" name="upload_file" />
+                    
+            <!--<button id="btnSubmit" type="button">Button</button> -->
 			</div>
     <ul>
         <!-- <label for="startDate">Date :</label>

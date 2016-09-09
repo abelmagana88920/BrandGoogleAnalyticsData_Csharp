@@ -692,6 +692,7 @@
         },
 
         _onDone: function (result, textStatus, jqXHR, options) {
+			
             var total = options._progress.total;
             if (options._progress.loaded < total) {
                 // Create a progress event if no final progress event
@@ -702,6 +703,15 @@
                     total: total
                 }), options);
             }
+			
+			//console.log(result);
+			
+			 $('#browse').css("display", "block");
+			 $('#wait').css("display", "none");
+			 
+			 options.context.find('p')
+                         .append('');
+			
             options.result = result;
             options.textStatus = textStatus;
             options.jqXHR = jqXHR;
@@ -709,6 +719,10 @@
         },
 
         _onFail: function (jqXHR, textStatus, errorThrown, options) {
+			
+			 $('#browse').css("display", "block");
+			  $('#wait').css("display", "none");
+			
             options.jqXHR = jqXHR;
             options.textStatus = textStatus;
             options.errorThrown = errorThrown;

@@ -44,6 +44,7 @@ namespace BrandGoogleAnalyticsData.Controllers
         [HttpPost]
         public ActionResult UploadSubmit(HttpPostedFileBase upload_file)
         {
+            killProcessByName("Excel");
             var path = "";
             string status = "error";
             if (upload_file != null && upload_file.ContentLength > 0)
@@ -66,7 +67,7 @@ namespace BrandGoogleAnalyticsData.Controllers
 
                 
             }
-
+            killProcessByName("Excel");
             return new HttpStatusCodeResult(404);
            
 
@@ -116,138 +117,137 @@ namespace BrandGoogleAnalyticsData.Controllers
         public JsonResult GAnalytics(string path, int month, int year)
         {
             //string path = "C:\\Users\\Abel\\Downloads\\AugustAnalytics\\BMRACING.xlsx";
-
             var _app = new Excel.Application();
             var _workbooks = _app.Workbooks.Open(path);
             var _worksheet = _workbooks.ActiveSheet;
-            string cell_data = "";
+             
+               
+                string cell_data = "";
 
-            Microsoft.Office.Interop.Excel.Range range = _worksheet.UsedRange;
-            //Read the first cell
+                Microsoft.Office.Interop.Excel.Range range = _worksheet.UsedRange;
+                //Read the first cell
 
 
-            string text_value = "";
-            int end_row = range.Rows.Count;
-            var end_column = range.Columns.Count;
-            var group_field = "";
-            var subgroup_field_text = "";
-            var subgroup_field_column2 = "";
-            var subgroup_field_column3 = "";
-            var subgroup_field_column4 = "";
-            var insert = false;
-            var value = "";
-            var name = "";
-            //[row,column]
+                string text_value = "";
+                int end_row = range.Rows.Count;
+                var end_column = range.Columns.Count;
+                var group_field = "";
+                var subgroup_field_text = "";
+                var subgroup_field_column2 = "";
+                var subgroup_field_column3 = "";
+                var subgroup_field_column4 = "";
+                var insert = false;
+                var value = "";
+                var name = "";
+                //[row,column]
 
-            for (var index_row = 1; index_row <= end_row; index_row++)
-            {
-                insert = true;
-                value = "";
-                name = "";
-
-                for (var index_column = 1; index_column <= end_column; index_column++)
+                for (var index_row = 1; index_row <= end_row; index_row++)
                 {
-                    text_value = _worksheet.Cells[index_row, index_column].Text.ToString();
+                    insert = true;
+                    value = "";
+                    name = "";
 
-                    if (text_value != "" || index_column == 2 || index_column == 3 || index_column == 4)
+                    for (var index_column = 1; index_column <= end_column; index_column++)
                     {
-                        if (index_column == 1)
-                        {
-                            if (text_value == "Audience" ||
-                                text_value == "New vs Returning Visitor" ||
-                                text_value == "Devices" ||
-                                text_value == "Acquisition" ||
-                                text_value == "Behavior" ||
-                                text_value == "Site Speed"
-                            )
-                            {
-                                group_field = text_value;
-                                insert = false;
-                            }
-                            else if (text_value.Contains("Country"))
-                            {
-                                group_field = "Country";
-                                insert = false;
-                            }
+                        text_value = _worksheet.Cells[index_row, index_column].Text.ToString();
 
-                        }
-
-                        if (!insert)
-                        {
-
-                            if (index_column == 2)
-                            {
-                                subgroup_field_column2 = text_value;
-                            }
-                            else if (index_column == 3)
-                            {
-                                subgroup_field_column3 = text_value;
-                                //subgroup_field_text = subgroup_field_column3;
-                            }
-                            else if (index_column == 4)
-                            {
-                                subgroup_field_column4 = text_value;
-                                // subgroup_field_text = subgroup_field_column4;
-                            }
-
-                        }
-                        else
+                        if (text_value != "" || index_column == 2 || index_column == 3 || index_column == 4)
                         {
                             if (index_column == 1)
                             {
-                                name = text_value;
-                            }
-                            if (index_column == 2)
-                            {
-                                subgroup_field_text = subgroup_field_column2;
-                                value = text_value;
-                            }
-                            else if (index_column == 3)
-                            {
-                                subgroup_field_text = subgroup_field_column3;
-                                value = text_value;
-                            }
-                            else if (index_column == 4)
-                            {
-                                subgroup_field_text = subgroup_field_column4;
-                                value = text_value;
-                            }
-                        }
+                                if (text_value == "Audience" ||
+                                    text_value == "New vs Returning Visitor" ||
+                                    text_value == "Devices" ||
+                                    text_value == "Acquisition" ||
+                                    text_value == "Behavior" ||
+                                    text_value == "Site Speed"
+                                )
+                                {
+                                    group_field = text_value;
+                                    insert = false;
+                                }
+                                else if (text_value.Contains("Country"))
+                                {
+                                    group_field = "Country";
+                                    insert = false;
+                                }
 
-                        string fileName = Path.GetFileNameWithoutExtension(path);
+                            }
 
-                        //cell_data += group_field + index_row + ":" + index_column + " " + text_value;
-                        if (insert && value != "")
-                        {
-                            Library.Execute(@"insert into tblBrandGoogleAanalyticsData 
+                            if (!insert)
+                            {
+
+                                if (index_column == 2)
+                                {
+                                    subgroup_field_column2 = text_value;
+                                }
+                                else if (index_column == 3)
+                                {
+                                    subgroup_field_column3 = text_value;
+                                    //subgroup_field_text = subgroup_field_column3;
+                                }
+                                else if (index_column == 4)
+                                {
+                                    subgroup_field_column4 = text_value;
+                                    // subgroup_field_text = subgroup_field_column4;
+                                }
+
+                            }
+                            else
+                            {
+                                if (index_column == 1)
+                                {
+                                    name = text_value;
+                                }
+                                if (index_column == 2)
+                                {
+                                    subgroup_field_text = subgroup_field_column2;
+                                    value = text_value;
+                                }
+                                else if (index_column == 3)
+                                {
+                                    subgroup_field_text = subgroup_field_column3;
+                                    value = text_value;
+                                }
+                                else if (index_column == 4)
+                                {
+                                    subgroup_field_text = subgroup_field_column4;
+                                    value = text_value;
+                                }
+                            }
+
+                            string fileName = Path.GetFileNameWithoutExtension(path);
+
+                            //cell_data += group_field + index_row + ":" + index_column + " " + text_value;
+                            if (insert && value != "")
+                            {
+                                Library.Execute(@"insert into tblBrandGoogleAanalyticsData 
                                   (brand,group_field,subgroup_id, subgroup_field, name, value, month, year)
-                                    values('" + fileName + "','" + group_field + "','" + (index_column - 1) + "','" + subgroup_field_text + "','" + name + "','" + value + "','"+month+"','"+year+@"')
+                                    values('" + fileName + "','" + group_field + "','" + (index_column - 1) + "','" + subgroup_field_text + "','" + name + "','" + value + "','" + month + "','" + year + @"')
                                 ");
-                            // cell_data += "group_field: " + group_field + " subgroup_field:(" + (index_column - 1) + ")" + subgroup_field_text + " " + "name: " + name + " " + value;
+                                // cell_data += "group_field: " + group_field + " subgroup_field:(" + (index_column - 1) + ")" + subgroup_field_text + " " + "name: " + name + " " + value;
+                            }
                         }
-                    }
-                    else
-                    {
-                        // subgroup_field_column2 = ""; subgroup_field_column3 = ""; subgroup_field_column4 = "";
-                    }
+                        else
+                        {
+                            // subgroup_field_column2 = ""; subgroup_field_column3 = ""; subgroup_field_column4 = "";
+                        }
 
+                    }
                 }
-            }
+                _workbooks.Close();
 
+                _app.Quit();
+                if (_worksheet != null) System.Runtime.InteropServices.Marshal.ReleaseComObject(_worksheet);
+                if (_workbooks != null) System.Runtime.InteropServices.Marshal.ReleaseComObject(_workbooks);
 
-            _workbooks.Close();
-
-            _app.Quit();
-
-            System.Runtime.InteropServices.Marshal.ReleaseComObject(_app);
-
+                System.Runtime.InteropServices.Marshal.ReleaseComObject(_app);
+           
 
             return Json(new
             {
-                path = path,
-                cell_data = cell_data,
-                end_column = end_column,
-                end_row = end_row
+                path = path
+               
             });
         }
 
@@ -281,9 +281,9 @@ namespace BrandGoogleAnalyticsData.Controllers
 
             Library.Execute("delete from tblBrandGoogleAanalyticsData where month='"+month+"' and year='"+year+"'");
 
-            try
-            {
-                killProcessByName("Excel");
+           /* try
+            {*/
+               
                 using (ZipArchive archive = ZipFile.OpenRead(zipPath))
                 {
                     bool havingexcel_files = false;
@@ -321,11 +321,12 @@ namespace BrandGoogleAnalyticsData.Controllers
 
                 killProcessByName("Excel");
                 return "success";
-            }
-           catch
+
+            /* }
+          catch
             {
                 return "error";
-            }
+            } */
 
 
            
