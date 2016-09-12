@@ -24,6 +24,8 @@ namespace BrandGoogleAnalyticsData
         }
         public static void Execute(string command)
         {
+
+           // Library.WriteErrorLog(command);
             string[] sep = { "provider connection string=" };
             string metadata_con = ConfigurationManager.ConnectionStrings["IFSReportingContext"].ConnectionString;
             string[] metadata_con_array = Explode(metadata_con ,sep);

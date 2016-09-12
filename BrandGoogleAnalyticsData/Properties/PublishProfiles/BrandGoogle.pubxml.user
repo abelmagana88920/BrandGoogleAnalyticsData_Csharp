@@ -14,7 +14,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>08/22/2016 15:23:29</publishTime>
     </File>
     <File Include="bin/BrandGoogleAnalyticsData.dll">
-      <publishTime>09/08/2016 01:28:04</publishTime>
+      <publishTime>09/11/2016 21:03:10</publishTime>
     </File>
     <File Include="bin/EntityFramework.dll">
       <publishTime>08/22/2016 15:23:29</publishTime>
@@ -296,7 +296,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>08/22/2016 15:23:29</publishTime>
     </File>
     <File Include="Views/Brand/Upload.cshtml">
-      <publishTime>09/08/2016 01:36:04</publishTime>
+      <publishTime>09/09/2016 01:10:06</publishTime>
     </File>
     <File Include="Views/Customer/Create.cshtml">
       <publishTime>09/05/2016 23:21:55</publishTime>
@@ -332,7 +332,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>08/22/2016 15:23:29</publishTime>
     </File>
     <File Include="Web.config">
-      <publishTime>09/08/2016 01:42:06</publishTime>
+      <publishTime>09/11/2016 21:19:21</publishTime>
     </File>
   </ItemGroup>
 </Project>

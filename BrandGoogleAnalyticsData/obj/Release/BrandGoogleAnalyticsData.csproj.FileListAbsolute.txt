@@ -32,3 +32,4 @@ C:\Users\Abel\Downloads\GoogleAnalytic_Test\BrandGoogleAnalyticsData\bin\System.
 C:\Users\Abel\Downloads\GoogleAnalytic_Test\BrandGoogleAnalyticsData\bin\System.Web.WebPages.Razor.xml
 C:\Users\Abel\Downloads\GoogleAnalytic_Test\BrandGoogleAnalyticsData\obj\Release\BrandGoogleAnalyticsData.dll
 C:\Users\Abel\Downloads\GoogleAnalytic_Test\BrandGoogleAnalyticsData\obj\Release\BrandGoogleAnalyticsData.pdb
+C:\Users\Abel\Downloads\GoogleAnalytic_Test\BrandGoogleAnalyticsData\obj\Release\BrandGoogleAnalyticsData.csprojResolveAssemblyReference.cache

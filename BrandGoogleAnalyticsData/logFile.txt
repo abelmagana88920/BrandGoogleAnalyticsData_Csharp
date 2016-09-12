@@ -1,3 +1,839 @@
-9/4/2016 5:06:21 AM: "data source=10.10.10.53;initial catalog=IFSReporting;integrated security=True;MultipleActiveResultSets=True;App=EntityFramework"
-9/4/2016 5:08:47 AM: "data source=10.10.10.53;initial catalog=IFSReporting;integrated security=True;MultipleActiveResultSets=True;App=EntityFramework"
-9/4/2016 5:10:15 AM: data source=10.10.10.53;initial catalog=IFSReporting;integrated security=True;MultipleActiveResultSets=True;App=EntityFramework
+9/11/2016 8:37:56 PM: delete from tblBrandGoogleAanalyticsData where month='2' and year='2016'
+9/11/2016 8:38:05 PM: insert into tblBrandGoogleAanalyticsData 
+                                  (brand,group_field,subgroup_id, subgroup_field, name, value, month, year, dt)
+                                    values('BMRACING','Audience','1','','Session','37,640','2','2016','2/1/2016 12:00:00 AM'
+)
+                                
+9/11/2016 8:38:05 PM: insert into tblBrandGoogleAanalyticsData 
+                                  (brand,group_field,subgroup_id, subgroup_field, name, value, month, year, dt)
+                                    values('BMRACING','Audience','1','','Users','29,174','2','2016','2/1/2016 12:00:00 AM'
+)
+                                
+9/11/2016 8:38:05 PM: insert into tblBrandGoogleAanalyticsData 
+                                  (brand,group_field,subgroup_id, subgroup_field, name, value, month, year, dt)
+                                    values('BMRACING','Audience','1','','Pageviews','29,174','2','2016','2/1/2016 12:00:00 AM'
+)
+                                
+9/11/2016 8:38:05 PM: insert into tblBrandGoogleAanalyticsData 
+                                  (brand,group_field,subgroup_id, subgroup_field, name, value, month, year, dt)
+                                    values('BMRACING','Audience','1','','Pages / Session','3.45','2','2016','2/1/2016 12:00:00 AM'
+)
+                                
+9/11/2016 8:38:05 PM: insert into tblBrandGoogleAanalyticsData 
+                                  (brand,group_field,subgroup_id, subgroup_field, name, value, month, year, dt)
+                                    values('BMRACING','Audience','1','','Average Session Duration','0:02:54','2','2016','2/1/2016 12:00:00 AM'
+)
+                                
+9/11/2016 8:38:05 PM: insert into tblBrandGoogleAanalyticsData 
+                                  (brand,group_field,subgroup_id, subgroup_field, name, value, month, year, dt)
+                                    values('BMRACING','Audience','1','','Bounce Rate','48.54%','2','2016','2/1/2016 12:00:00 AM'
+)
+                                
+9/11/2016 8:38:05 PM: insert into tblBrandGoogleAanalyticsData 
+                                  (brand,group_field,subgroup_id, subgroup_field, name, value, month, year, dt)
+                                    values('BMRACING','Audience','1','','% New Sessions','71.90%','2','2016','2/1/2016 12:00:00 AM'
+)
+                                
+9/11/2016 8:38:05 PM: insert into tblBrandGoogleAanalyticsData 
+                                  (brand,group_field,subgroup_id, subgroup_field, name, value, month, year, dt)
+                                    values('BMRACING','Country','1','Sessions','United States','26,423','2','2016','2/1/2016 12:00:00 AM'
+)
+                                
+9/11/2016 8:38:05 PM: insert into tblBrandGoogleAanalyticsData 
+                                  (brand,group_field,subgroup_id, subgroup_field, name, value, month, year, dt)
+                                    values('BMRACING','Country','1','Sessions','Canada','3,574','2','2016','2/1/2016 12:00:00 AM'
+)
+                                
+9/11/2016 8:38:05 PM: insert into tblBrandGoogleAanalyticsData 
+                                  (brand,group_field,subgroup_id, subgroup_field, name, value, month, year, dt)
+                                    values('BMRACING','Country','1','Sessions','Australia','2,299','2','2016','2/1/2016 12:00:00 AM'
+)
+                                
+9/11/2016 8:38:05 PM: insert into tblBrandGoogleAanalyticsData 
+                                  (brand,group_field,subgroup_id, subgroup_field, name, value, month, year, dt)
+                                    values('BMRACING','Country','1','Sessions','United Kingdom','1,984','2','2016','2/1/2016 12:00:00 AM'
+)
+                                
+9/11/2016 8:38:05 PM: insert into tblBrandGoogleAanalyticsData 
+                                  (brand,group_field,subgroup_id, subgroup_field, name, value, month, year, dt)
+                                    values('BMRACING','New vs Returning Visitor','1','Sessions','New Visitor','27,080','2','2016','2/1/2016 12:00:00 AM'
+)
+                                
+9/11/2016 8:38:05 PM: insert into tblBrandGoogleAanalyticsData 
+                                  (brand,group_field,subgroup_id, subgroup_field, name, value, month, year, dt)
+                                    values('BMRACING','New vs Returning Visitor','2','Bounce Rates','New Visitor','48.43%','2','2016','2/1/2016 12:00:00 AM'
+)
+                                
+9/11/2016 8:38:05 PM: insert into tblBrandGoogleAanalyticsData 
+                                  (brand,group_field,subgroup_id, subgroup_field, name, value, month, year, dt)
+                                    values('BMRACING','New vs Returning Visitor','3','Avg. Session Duration','New Visitor','0:02:37','2','2016','2/1/2016 12:00:00 AM'
+)
+                                
+9/11/2016 8:38:05 PM: insert into tblBrandGoogleAanalyticsData 
+                                  (brand,group_field,subgroup_id, subgroup_field, name, value, month, year, dt)
+                                    values('BMRACING','New vs Returning Visitor','1','Sessions','Returning Visitor','10,560','2','2016','2/1/2016 12:00:00 AM'
+)
+                                
+9/11/2016 8:38:05 PM: insert into tblBrandGoogleAanalyticsData 
+                                  (brand,group_field,subgroup_id, subgroup_field, name, value, month, year, dt)
+                                    values('BMRACING','New vs Returning Visitor','2','Bounce Rates','Returning Visitor','48.81%','2','2016','2/1/2016 12:00:00 AM'
+)
+                                
+9/11/2016 8:38:05 PM: insert into tblBrandGoogleAanalyticsData 
+                                  (brand,group_field,subgroup_id, subgroup_field, name, value, month, year, dt)
+                                    values('BMRACING','New vs Returning Visitor','3','Avg. Session Duration','Returning Visitor','0:03:37','2','2016','2/1/2016 12:00:00 AM'
+)
+                                
+9/11/2016 8:38:05 PM: insert into tblBrandGoogleAanalyticsData 
+                                  (brand,group_field,subgroup_id, subgroup_field, name, value, month, year, dt)
+                                    values('BMRACING','Devices','1','Sessions','Desktop','18,559','2','2016','2/1/2016 12:00:00 AM'
+)
+                                
+9/11/2016 8:38:05 PM: insert into tblBrandGoogleAanalyticsData 
+                                  (brand,group_field,subgroup_id, subgroup_field, name, value, month, year, dt)
+                                    values('BMRACING','Devices','2','Bounce Rate','Desktop','41.33%','2','2016','2/1/2016 12:00:00 AM'
+)
+                                
+9/11/2016 8:38:05 PM: insert into tblBrandGoogleAanalyticsData 
+                                  (brand,group_field,subgroup_id, subgroup_field, name, value, month, year, dt)
+                                    values('BMRACING','Devices','3','Avg. Session Duration','Desktop','0:03:25','2','2016','2/1/2016 12:00:00 AM'
+)
+                                
+9/11/2016 8:38:05 PM: insert into tblBrandGoogleAanalyticsData 
+                                  (brand,group_field,subgroup_id, subgroup_field, name, value, month, year, dt)
+                                    values('BMRACING','Devices','1','Sessions','Mobile','15,710','2','2016','2/1/2016 12:00:00 AM'
+)
+                                
+9/11/2016 8:38:05 PM: insert into tblBrandGoogleAanalyticsData 
+                                  (brand,group_field,subgroup_id, subgroup_field, name, value, month, year, dt)
+                                    values('BMRACING','Devices','2','Bounce Rate','Mobile','56.80%','2','2016','2/1/2016 12:00:00 AM'
+)
+                                
+9/11/2016 8:38:05 PM: insert into tblBrandGoogleAanalyticsData 
+                                  (brand,group_field,subgroup_id, subgroup_field, name, value, month, year, dt)
+                                    values('BMRACING','Devices','3','Avg. Session Duration','Mobile','0:02:14','2','2016','2/1/2016 12:00:00 AM'
+)
+                                
+9/11/2016 8:38:05 PM: insert into tblBrandGoogleAanalyticsData 
+                                  (brand,group_field,subgroup_id, subgroup_field, name, value, month, year, dt)
+                                    values('BMRACING','Devices','1','Sessions','Tablet','3,371','2','2016','2/1/2016 12:00:00 AM'
+)
+                                
+9/11/2016 8:38:05 PM: insert into tblBrandGoogleAanalyticsData 
+                                  (brand,group_field,subgroup_id, subgroup_field, name, value, month, year, dt)
+                                    values('BMRACING','Devices','2','Bounce Rate','Tablet','49.75%','2','2016','2/1/2016 12:00:00 AM'
+)
+                                
+9/11/2016 8:38:05 PM: insert into tblBrandGoogleAanalyticsData 
+                                  (brand,group_field,subgroup_id, subgroup_field, name, value, month, year, dt)
+                                    values('BMRACING','Devices','3','Avg. Session Duration','Tablet','0:03:07','2','2016','2/1/2016 12:00:00 AM'
+)
+                                
+9/11/2016 8:38:05 PM: insert into tblBrandGoogleAanalyticsData 
+                                  (brand,group_field,subgroup_id, subgroup_field, name, value, month, year, dt)
+                                    values('BMRACING','Acquisition','1','Sessions','Organic Search','26,810','2','2016','2/1/2016 12:00:00 AM'
+)
+                                
+9/11/2016 8:38:05 PM: insert into tblBrandGoogleAanalyticsData 
+                                  (brand,group_field,subgroup_id, subgroup_field, name, value, month, year, dt)
+                                    values('BMRACING','Acquisition','2','Bounce Rates','Organic Search','45.15%','2','2016','2/1/2016 12:00:00 AM'
+)
+                                
+9/11/2016 8:38:05 PM: insert into tblBrandGoogleAanalyticsData 
+                                  (brand,group_field,subgroup_id, subgroup_field, name, value, month, year, dt)
+                                    values('BMRACING','Acquisition','1','Sessions','Direct','6,390','2','2016','2/1/2016 12:00:00 AM'
+)
+                                
+9/11/2016 8:38:05 PM: insert into tblBrandGoogleAanalyticsData 
+                                  (brand,group_field,subgroup_id, subgroup_field, name, value, month, year, dt)
+                                    values('BMRACING','Acquisition','2','Bounce Rates','Direct','58.04%','2','2016','2/1/2016 12:00:00 AM'
+)
+                                
+9/11/2016 8:38:05 PM: insert into tblBrandGoogleAanalyticsData 
+                                  (brand,group_field,subgroup_id, subgroup_field, name, value, month, year, dt)
+                                    values('BMRACING','Acquisition','1','Sessions','Referral','4,192','2','2016','2/1/2016 12:00:00 AM'
+)
+                                
+9/11/2016 8:38:05 PM: insert into tblBrandGoogleAanalyticsData 
+                                  (brand,group_field,subgroup_id, subgroup_field, name, value, month, year, dt)
+                                    values('BMRACING','Acquisition','2','Bounce Rates','Referral','53.91%','2','2016','2/1/2016 12:00:00 AM'
+)
+                                
+9/11/2016 8:38:05 PM: insert into tblBrandGoogleAanalyticsData 
+                                  (brand,group_field,subgroup_id, subgroup_field, name, value, month, year, dt)
+                                    values('BMRACING','Acquisition','1','Sessions','Social','239','2','2016','2/1/2016 12:00:00 AM'
+)
+                                
+9/11/2016 8:38:05 PM: insert into tblBrandGoogleAanalyticsData 
+                                  (brand,group_field,subgroup_id, subgroup_field, name, value, month, year, dt)
+                                    values('BMRACING','Acquisition','2','Bounce Rates','Social','79.92%','2','2016','2/1/2016 12:00:00 AM'
+)
+                                
+9/11/2016 8:38:05 PM: insert into tblBrandGoogleAanalyticsData 
+                                  (brand,group_field,subgroup_id, subgroup_field, name, value, month, year, dt)
+                                    values('BMRACING','Behavior','1','','Pageviews','130,010','2','2016','2/1/2016 12:00:00 AM'
+)
+                                
+9/11/2016 8:38:05 PM: insert into tblBrandGoogleAanalyticsData 
+                                  (brand,group_field,subgroup_id, subgroup_field, name, value, month, year, dt)
+                                    values('BMRACING','Behavior','1','','Unique Pageviews','103,857','2','2016','2/1/2016 12:00:00 AM'
+)
+                                
+9/11/2016 8:38:05 PM: insert into tblBrandGoogleAanalyticsData 
+                                  (brand,group_field,subgroup_id, subgroup_field, name, value, month, year, dt)
+                                    values('BMRACING','Behavior','1','','Avg. Time on Page','0:01:11','2','2016','2/1/2016 12:00:00 AM'
+)
+                                
+9/11/2016 8:38:05 PM: insert into tblBrandGoogleAanalyticsData 
+                                  (brand,group_field,subgroup_id, subgroup_field, name, value, month, year, dt)
+                                    values('BMRACING','Behavior','1','','Bounce Rate','48.54%','2','2016','2/1/2016 12:00:00 AM'
+)
+                                
+9/11/2016 8:38:05 PM: insert into tblBrandGoogleAanalyticsData 
+                                  (brand,group_field,subgroup_id, subgroup_field, name, value, month, year, dt)
+                                    values('BMRACING','Behavior','1','','% Exit','28.95%','2','2016','2/1/2016 12:00:00 AM'
+)
+                                
+9/11/2016 8:38:05 PM: insert into tblBrandGoogleAanalyticsData 
+                                  (brand,group_field,subgroup_id, subgroup_field, name, value, month, year, dt)
+                                    values('BMRACING','Site Speed','1','','Avg. Page Load Time (sec)','8.39','2','2016','2/1/2016 12:00:00 AM'
+)
+                                
+9/11/2016 8:38:05 PM: insert into tblBrandGoogleAanalyticsData 
+                                  (brand,group_field,subgroup_id, subgroup_field, name, value, month, year, dt)
+                                    values('BMRACING','Site Speed','1','','Avg. Redirection Time (sec)','0.13','2','2016','2/1/2016 12:00:00 AM'
+)
+                                
+9/11/2016 8:38:05 PM: insert into tblBrandGoogleAanalyticsData 
+                                  (brand,group_field,subgroup_id, subgroup_field, name, value, month, year, dt)
+                                    values('DINANCARS','Audience','1','','Session','107,718','2','2016','2/1/2016 12:00:00 AM'
+)
+                                
+9/11/2016 8:38:05 PM: insert into tblBrandGoogleAanalyticsData 
+                                  (brand,group_field,subgroup_id, subgroup_field, name, value, month, year, dt)
+                                    values('DINANCARS','Audience','1','','Users','76,360','2','2016','2/1/2016 12:00:00 AM'
+)
+                                
+9/11/2016 8:38:05 PM: insert into tblBrandGoogleAanalyticsData 
+                                  (brand,group_field,subgroup_id, subgroup_field, name, value, month, year, dt)
+                                    values('DINANCARS','Audience','1','','Pageviews','555,472','2','2016','2/1/2016 12:00:00 AM'
+)
+                                
+9/11/2016 8:38:05 PM: insert into tblBrandGoogleAanalyticsData 
+                                  (brand,group_field,subgroup_id, subgroup_field, name, value, month, year, dt)
+                                    values('DINANCARS','Audience','1','','Pages / Session','5.16','2','2016','2/1/2016 12:00:00 AM'
+)
+                                
+9/11/2016 8:38:05 PM: insert into tblBrandGoogleAanalyticsData 
+                                  (brand,group_field,subgroup_id, subgroup_field, name, value, month, year, dt)
+                                    values('DINANCARS','Audience','1','','Average Session Duration','0:03:50','2','2016','2/1/2016 12:00:00 AM'
+)
+                                
+9/11/2016 8:38:05 PM: insert into tblBrandGoogleAanalyticsData 
+                                  (brand,group_field,subgroup_id, subgroup_field, name, value, month, year, dt)
+                                    values('DINANCARS','Audience','1','','Bounce Rate','34.03%','2','2016','2/1/2016 12:00:00 AM'
+)
+                                
+9/11/2016 8:38:05 PM: insert into tblBrandGoogleAanalyticsData 
+                                  (brand,group_field,subgroup_id, subgroup_field, name, value, month, year, dt)
+                                    values('DINANCARS','Audience','1','','% New Sessions','60.24%','2','2016','2/1/2016 12:00:00 AM'
+)
+                                
+9/11/2016 8:38:05 PM: insert into tblBrandGoogleAanalyticsData 
+                                  (brand,group_field,subgroup_id, subgroup_field, name, value, month, year, dt)
+                                    values('DINANCARS','Country','1','Sessions','United States','81,872','2','2016','2/1/2016 12:00:00 AM'
+)
+                                
+9/11/2016 8:38:05 PM: insert into tblBrandGoogleAanalyticsData 
+                                  (brand,group_field,subgroup_id, subgroup_field, name, value, month, year, dt)
+                                    values('DINANCARS','Country','1','Sessions','Canada','8,614','2','2016','2/1/2016 12:00:00 AM'
+)
+                                
+9/11/2016 8:38:05 PM: insert into tblBrandGoogleAanalyticsData 
+                                  (brand,group_field,subgroup_id, subgroup_field, name, value, month, year, dt)
+                                    values('DINANCARS','Country','1','Sessions','United Kingdom','2,310','2','2016','2/1/2016 12:00:00 AM'
+)
+                                
+9/11/2016 8:38:05 PM: insert into tblBrandGoogleAanalyticsData 
+                                  (brand,group_field,subgroup_id, subgroup_field, name, value, month, year, dt)
+                                    values('DINANCARS','Country','1','Sessions','Australia','1,212','2','2016','2/1/2016 12:00:00 AM'
+)
+                                
+9/11/2016 8:38:05 PM: insert into tblBrandGoogleAanalyticsData 
+                                  (brand,group_field,subgroup_id, subgroup_field, name, value, month, year, dt)
+                                    values('DINANCARS','Country','1','Sessions','Germany','1,006','2','2016','2/1/2016 12:00:00 AM'
+)
+                                
+9/11/2016 8:38:05 PM: insert into tblBrandGoogleAanalyticsData 
+                                  (brand,group_field,subgroup_id, subgroup_field, name, value, month, year, dt)
+                                    values('DINANCARS','New vs Returning Visitor','1','Sessions','New Visitor','64,977','2','2016','2/1/2016 12:00:00 AM'
+)
+                                
+9/11/2016 8:38:05 PM: insert into tblBrandGoogleAanalyticsData 
+                                  (brand,group_field,subgroup_id, subgroup_field, name, value, month, year, dt)
+                                    values('DINANCARS','New vs Returning Visitor','2','Bounce Rates','New Visitor','33.38%','2','2016','2/1/2016 12:00:00 AM'
+)
+                                
+9/11/2016 8:38:05 PM: insert into tblBrandGoogleAanalyticsData 
+                                  (brand,group_field,subgroup_id, subgroup_field, name, value, month, year, dt)
+                                    values('DINANCARS','New vs Returning Visitor','3','Avg. Session Duration','New Visitor','0:03:27','2','2016','2/1/2016 12:00:00 AM'
+)
+                                
+9/11/2016 8:38:05 PM: insert into tblBrandGoogleAanalyticsData 
+                                  (brand,group_field,subgroup_id, subgroup_field, name, value, month, year, dt)
+                                    values('DINANCARS','New vs Returning Visitor','1','Sessions','Returning Visitor','42,741','2','2016','2/1/2016 12:00:00 AM'
+)
+                                
+9/11/2016 8:38:05 PM: insert into tblBrandGoogleAanalyticsData 
+                                  (brand,group_field,subgroup_id, subgroup_field, name, value, month, year, dt)
+                                    values('DINANCARS','New vs Returning Visitor','2','Bounce Rates','Returning Visitor','35.02%','2','2016','2/1/2016 12:00:00 AM'
+)
+                                
+9/11/2016 8:38:05 PM: insert into tblBrandGoogleAanalyticsData 
+                                  (brand,group_field,subgroup_id, subgroup_field, name, value, month, year, dt)
+                                    values('DINANCARS','New vs Returning Visitor','3','Avg. Session Duration','Returning Visitor','0:04:25','2','2016','2/1/2016 12:00:00 AM'
+)
+                                
+9/11/2016 8:38:05 PM: insert into tblBrandGoogleAanalyticsData 
+                                  (brand,group_field,subgroup_id, subgroup_field, name, value, month, year, dt)
+                                    values('DINANCARS','Devices','1','Sessions','Desktop','52,797','2','2016','2/1/2016 12:00:00 AM'
+)
+                                
+9/11/2016 8:38:05 PM: insert into tblBrandGoogleAanalyticsData 
+                                  (brand,group_field,subgroup_id, subgroup_field, name, value, month, year, dt)
+                                    values('DINANCARS','Devices','2','Bounce Rate','Desktop','26.76%','2','2016','2/1/2016 12:00:00 AM'
+)
+                                
+9/11/2016 8:38:05 PM: insert into tblBrandGoogleAanalyticsData 
+                                  (brand,group_field,subgroup_id, subgroup_field, name, value, month, year, dt)
+                                    values('DINANCARS','Devices','3','Avg. Session Duration','Desktop','0:04:23','2','2016','2/1/2016 12:00:00 AM'
+)
+                                
+9/11/2016 8:38:05 PM: insert into tblBrandGoogleAanalyticsData 
+                                  (brand,group_field,subgroup_id, subgroup_field, name, value, month, year, dt)
+                                    values('DINANCARS','Devices','1','Sessions','Mobile','44,609','2','2016','2/1/2016 12:00:00 AM'
+)
+                                
+9/11/2016 8:38:05 PM: insert into tblBrandGoogleAanalyticsData 
+                                  (brand,group_field,subgroup_id, subgroup_field, name, value, month, year, dt)
+                                    values('DINANCARS','Devices','2','Bounce Rate','Mobile','42.89%','2','2016','2/1/2016 12:00:00 AM'
+)
+                                
+9/11/2016 8:38:05 PM: insert into tblBrandGoogleAanalyticsData 
+                                  (brand,group_field,subgroup_id, subgroup_field, name, value, month, year, dt)
+                                    values('DINANCARS','Devices','3','Avg. Session Duration','Mobile','0:03:00','2','2016','2/1/2016 12:00:00 AM'
+)
+                                
+9/11/2016 8:38:05 PM: insert into tblBrandGoogleAanalyticsData 
+                                  (brand,group_field,subgroup_id, subgroup_field, name, value, month, year, dt)
+                                    values('DINANCARS','Devices','1','Sessions','Tablet','10,312','2','2016','2/1/2016 12:00:00 AM'
+)
+                                
+9/11/2016 8:38:05 PM: insert into tblBrandGoogleAanalyticsData 
+                                  (brand,group_field,subgroup_id, subgroup_field, name, value, month, year, dt)
+                                    values('DINANCARS','Devices','2','Bounce Rate','Tablet','32.95%','2','2016','2/1/2016 12:00:00 AM'
+)
+                                
+9/11/2016 8:38:05 PM: insert into tblBrandGoogleAanalyticsData 
+                                  (brand,group_field,subgroup_id, subgroup_field, name, value, month, year, dt)
+                                    values('DINANCARS','Devices','3','Avg. Session Duration','Tablet','0:04:34','2','2016','2/1/2016 12:00:00 AM'
+)
+                                
+9/11/2016 8:38:05 PM: insert into tblBrandGoogleAanalyticsData 
+                                  (brand,group_field,subgroup_id, subgroup_field, name, value, month, year, dt)
+                                    values('DINANCARS','Acquisition','1','Sessions','Organic Search','84,380','2','2016','2/1/2016 12:00:00 AM'
+)
+                                
+9/11/2016 8:38:05 PM: insert into tblBrandGoogleAanalyticsData 
+                                  (brand,group_field,subgroup_id, subgroup_field, name, value, month, year, dt)
+                                    values('DINANCARS','Acquisition','2','Bounce Rates','Organic Search','32.67%','2','2016','2/1/2016 12:00:00 AM'
+)
+                                
+9/11/2016 8:38:05 PM: insert into tblBrandGoogleAanalyticsData 
+                                  (brand,group_field,subgroup_id, subgroup_field, name, value, month, year, dt)
+                                    values('DINANCARS','Acquisition','1','Sessions','Direct','18,400','2','2016','2/1/2016 12:00:00 AM'
+)
+                                
+9/11/2016 8:38:05 PM: insert into tblBrandGoogleAanalyticsData 
+                                  (brand,group_field,subgroup_id, subgroup_field, name, value, month, year, dt)
+                                    values('DINANCARS','Acquisition','2','Bounce Rates','Direct','37.76%','2','2016','2/1/2016 12:00:00 AM'
+)
+                                
+9/11/2016 8:38:05 PM: insert into tblBrandGoogleAanalyticsData 
+                                  (brand,group_field,subgroup_id, subgroup_field, name, value, month, year, dt)
+                                    values('DINANCARS','Acquisition','1','Sessions','Referral','4,325','2','2016','2/1/2016 12:00:00 AM'
+)
+                                
+9/11/2016 8:38:05 PM: insert into tblBrandGoogleAanalyticsData 
+                                  (brand,group_field,subgroup_id, subgroup_field, name, value, month, year, dt)
+                                    values('DINANCARS','Acquisition','2','Bounce Rates','Referral','42.34%','2','2016','2/1/2016 12:00:00 AM'
+)
+                                
+9/11/2016 8:38:05 PM: insert into tblBrandGoogleAanalyticsData 
+                                  (brand,group_field,subgroup_id, subgroup_field, name, value, month, year, dt)
+                                    values('DINANCARS','Acquisition','1','Sessions','Social','596','2','2016','2/1/2016 12:00:00 AM'
+)
+                                
+9/11/2016 8:38:05 PM: insert into tblBrandGoogleAanalyticsData 
+                                  (brand,group_field,subgroup_id, subgroup_field, name, value, month, year, dt)
+                                    values('DINANCARS','Acquisition','2','Bounce Rates','Social','51.34%','2','2016','2/1/2016 12:00:00 AM'
+)
+                                
+9/11/2016 8:38:05 PM: insert into tblBrandGoogleAanalyticsData 
+                                  (brand,group_field,subgroup_id, subgroup_field, name, value, month, year, dt)
+                                    values('DINANCARS','Behavior','1','','Pageviews','555,472','2','2016','2/1/2016 12:00:00 AM'
+)
+                                
+9/11/2016 8:38:05 PM: insert into tblBrandGoogleAanalyticsData 
+                                  (brand,group_field,subgroup_id, subgroup_field, name, value, month, year, dt)
+                                    values('DINANCARS','Behavior','1','','Unique Pageviews','431,393','2','2016','2/1/2016 12:00:00 AM'
+)
+                                
+9/11/2016 8:38:05 PM: insert into tblBrandGoogleAanalyticsData 
+                                  (brand,group_field,subgroup_id, subgroup_field, name, value, month, year, dt)
+                                    values('DINANCARS','Behavior','1','','Avg. Time on Page','0:00:55','2','2016','2/1/2016 12:00:00 AM'
+)
+                                
+9/11/2016 8:38:05 PM: insert into tblBrandGoogleAanalyticsData 
+                                  (brand,group_field,subgroup_id, subgroup_field, name, value, month, year, dt)
+                                    values('DINANCARS','Behavior','1','','Bounce Rate','34.03%','2','2016','2/1/2016 12:00:00 AM'
+)
+                                
+9/11/2016 8:38:05 PM: insert into tblBrandGoogleAanalyticsData 
+                                  (brand,group_field,subgroup_id, subgroup_field, name, value, month, year, dt)
+                                    values('DINANCARS','Behavior','1','','% Exit','19.39%','2','2016','2/1/2016 12:00:00 AM'
+)
+                                
+9/11/2016 8:38:05 PM: insert into tblBrandGoogleAanalyticsData 
+                                  (brand,group_field,subgroup_id, subgroup_field, name, value, month, year, dt)
+                                    values('DINANCARS','Site Speed','1','','Avg. Page Load Time (sec)','3.26','2','2016','2/1/2016 12:00:00 AM'
+)
+                                
+9/11/2016 8:38:05 PM: insert into tblBrandGoogleAanalyticsData 
+                                  (brand,group_field,subgroup_id, subgroup_field, name, value, month, year, dt)
+                                    values('DINANCARS','Site Speed','1','','Avg. Redirection Time (sec)','0.14','2','2016','2/1/2016 12:00:00 AM'
+)
+                                
+9/11/2016 8:38:05 PM: insert into tblBrandGoogleAanalyticsData 
+                                  (brand,group_field,subgroup_id, subgroup_field, name, value, month, year, dt)
+                                    values('HURST-DRIVELINES','Audience','1','','Session','10,454','2','2016','2/1/2016 12:00:00 AM'
+)
+                                
+9/11/2016 8:38:05 PM: insert into tblBrandGoogleAanalyticsData 
+                                  (brand,group_field,subgroup_id, subgroup_field, name, value, month, year, dt)
+                                    values('HURST-DRIVELINES','Audience','1','','Users','7,664','2','2016','2/1/2016 12:00:00 AM'
+)
+                                
+9/11/2016 8:38:05 PM: insert into tblBrandGoogleAanalyticsData 
+                                  (brand,group_field,subgroup_id, subgroup_field, name, value, month, year, dt)
+                                    values('HURST-DRIVELINES','Audience','1','','Pageviews','39,434','2','2016','2/1/2016 12:00:00 AM'
+)
+                                
+9/11/2016 8:38:05 PM: insert into tblBrandGoogleAanalyticsData 
+                                  (brand,group_field,subgroup_id, subgroup_field, name, value, month, year, dt)
+                                    values('HURST-DRIVELINES','Audience','1','','Pages / Session','3.77','2','2016','2/1/2016 12:00:00 AM'
+)
+                                
+9/11/2016 8:38:05 PM: insert into tblBrandGoogleAanalyticsData 
+                                  (brand,group_field,subgroup_id, subgroup_field, name, value, month, year, dt)
+                                    values('HURST-DRIVELINES','Audience','1','','Average Session Duration','0:03:50','2','2016','2/1/2016 12:00:00 AM'
+)
+                                
+9/11/2016 8:38:05 PM: insert into tblBrandGoogleAanalyticsData 
+                                  (brand,group_field,subgroup_id, subgroup_field, name, value, month, year, dt)
+                                    values('HURST-DRIVELINES','Audience','1','','Bounce Rate','41.36%','2','2016','2/1/2016 12:00:00 AM'
+)
+                                
+9/11/2016 8:38:05 PM: insert into tblBrandGoogleAanalyticsData 
+                                  (brand,group_field,subgroup_id, subgroup_field, name, value, month, year, dt)
+                                    values('HURST-DRIVELINES','Audience','1','','% New Sessions','65.19%','2','2016','2/1/2016 12:00:00 AM'
+)
+                                
+9/11/2016 8:38:05 PM: insert into tblBrandGoogleAanalyticsData 
+                                  (brand,group_field,subgroup_id, subgroup_field, name, value, month, year, dt)
+                                    values('HURST-DRIVELINES','Country','1','Sessions','United States','8,713','2','2016','2/1/2016 12:00:00 AM'
+)
+                                
+9/11/2016 8:38:05 PM: insert into tblBrandGoogleAanalyticsData 
+                                  (brand,group_field,subgroup_id, subgroup_field, name, value, month, year, dt)
+                                    values('HURST-DRIVELINES','Country','1','Sessions','Canada','693','2','2016','2/1/2016 12:00:00 AM'
+)
+                                
+9/11/2016 8:38:05 PM: insert into tblBrandGoogleAanalyticsData 
+                                  (brand,group_field,subgroup_id, subgroup_field, name, value, month, year, dt)
+                                    values('HURST-DRIVELINES','Country','1','Sessions','Philippines','151','2','2016','2/1/2016 12:00:00 AM'
+)
+                                
+9/11/2016 8:38:05 PM: insert into tblBrandGoogleAanalyticsData 
+                                  (brand,group_field,subgroup_id, subgroup_field, name, value, month, year, dt)
+                                    values('HURST-DRIVELINES','Country','1','Sessions','Australia','91','2','2016','2/1/2016 12:00:00 AM'
+)
+                                
+9/11/2016 8:38:05 PM: insert into tblBrandGoogleAanalyticsData 
+                                  (brand,group_field,subgroup_id, subgroup_field, name, value, month, year, dt)
+                                    values('HURST-DRIVELINES','New vs Returning Visitor','1','Sessions','New Visitor','6,819','2','2016','2/1/2016 12:00:00 AM'
+)
+                                
+9/11/2016 8:38:05 PM: insert into tblBrandGoogleAanalyticsData 
+                                  (brand,group_field,subgroup_id, subgroup_field, name, value, month, year, dt)
+                                    values('HURST-DRIVELINES','New vs Returning Visitor','2','Bounce Rates','New Visitor','41.40%','2','2016','2/1/2016 12:00:00 AM'
+)
+                                
+9/11/2016 8:38:05 PM: insert into tblBrandGoogleAanalyticsData 
+                                  (brand,group_field,subgroup_id, subgroup_field, name, value, month, year, dt)
+                                    values('HURST-DRIVELINES','New vs Returning Visitor','3','Avg. Session Duration','New Visitor','0:03:02','2','2016','2/1/2016 12:00:00 AM'
+)
+                                
+9/11/2016 8:38:05 PM: insert into tblBrandGoogleAanalyticsData 
+                                  (brand,group_field,subgroup_id, subgroup_field, name, value, month, year, dt)
+                                    values('HURST-DRIVELINES','New vs Returning Visitor','1','Sessions','Returning Visitor','3,635','2','2016','2/1/2016 12:00:00 AM'
+)
+                                
+9/11/2016 8:38:05 PM: insert into tblBrandGoogleAanalyticsData 
+                                  (brand,group_field,subgroup_id, subgroup_field, name, value, month, year, dt)
+                                    values('HURST-DRIVELINES','New vs Returning Visitor','2','Bounce Rates','Returning Visitor','41.29%','2','2016','2/1/2016 12:00:00 AM'
+)
+                                
+9/11/2016 8:38:05 PM: insert into tblBrandGoogleAanalyticsData 
+                                  (brand,group_field,subgroup_id, subgroup_field, name, value, month, year, dt)
+                                    values('HURST-DRIVELINES','New vs Returning Visitor','3','Avg. Session Duration','Returning Visitor','0:05:20','2','2016','2/1/2016 12:00:00 AM'
+)
+                                
+9/11/2016 8:38:05 PM: insert into tblBrandGoogleAanalyticsData 
+                                  (brand,group_field,subgroup_id, subgroup_field, name, value, month, year, dt)
+                                    values('HURST-DRIVELINES','Devices','1','Sessions','Desktop','5,973','2','2016','2/1/2016 12:00:00 AM'
+)
+                                
+9/11/2016 8:38:05 PM: insert into tblBrandGoogleAanalyticsData 
+                                  (brand,group_field,subgroup_id, subgroup_field, name, value, month, year, dt)
+                                    values('HURST-DRIVELINES','Devices','2','Bounce Rate','Desktop','37.27%','2','2016','2/1/2016 12:00:00 AM'
+)
+                                
+9/11/2016 8:38:05 PM: insert into tblBrandGoogleAanalyticsData 
+                                  (brand,group_field,subgroup_id, subgroup_field, name, value, month, year, dt)
+                                    values('HURST-DRIVELINES','Devices','3','Avg. Session Duration','Desktop','0:04:37','2','2016','2/1/2016 12:00:00 AM'
+)
+                                
+9/11/2016 8:38:06 PM: insert into tblBrandGoogleAanalyticsData 
+                                  (brand,group_field,subgroup_id, subgroup_field, name, value, month, year, dt)
+                                    values('HURST-DRIVELINES','Devices','1','Sessions','Mobile','3,251','2','2016','2/1/2016 12:00:00 AM'
+)
+                                
+9/11/2016 8:38:06 PM: insert into tblBrandGoogleAanalyticsData 
+                                  (brand,group_field,subgroup_id, subgroup_field, name, value, month, year, dt)
+                                    values('HURST-DRIVELINES','Devices','2','Bounce Rate','Mobile','49.03%','2','2016','2/1/2016 12:00:00 AM'
+)
+                                
+9/11/2016 8:38:06 PM: insert into tblBrandGoogleAanalyticsData 
+                                  (brand,group_field,subgroup_id, subgroup_field, name, value, month, year, dt)
+                                    values('HURST-DRIVELINES','Devices','3','Avg. Session Duration','Mobile','0:02:31','2','2016','2/1/2016 12:00:00 AM'
+)
+                                
+9/11/2016 8:38:06 PM: insert into tblBrandGoogleAanalyticsData 
+                                  (brand,group_field,subgroup_id, subgroup_field, name, value, month, year, dt)
+                                    values('HURST-DRIVELINES','Devices','1','Sessions','Tablet','1,230','2','2016','2/1/2016 12:00:00 AM'
+)
+                                
+9/11/2016 8:38:06 PM: insert into tblBrandGoogleAanalyticsData 
+                                  (brand,group_field,subgroup_id, subgroup_field, name, value, month, year, dt)
+                                    values('HURST-DRIVELINES','Devices','2','Bounce Rate','Tablet','40.98%','2','2016','2/1/2016 12:00:00 AM'
+)
+                                
+9/11/2016 8:38:06 PM: insert into tblBrandGoogleAanalyticsData 
+                                  (brand,group_field,subgroup_id, subgroup_field, name, value, month, year, dt)
+                                    values('HURST-DRIVELINES','Devices','3','Avg. Session Duration','Tablet','0:03:31','2','2016','2/1/2016 12:00:00 AM'
+)
+                                
+9/11/2016 8:38:06 PM: insert into tblBrandGoogleAanalyticsData 
+                                  (brand,group_field,subgroup_id, subgroup_field, name, value, month, year, dt)
+                                    values('HURST-DRIVELINES','Acquisition','1','Sessions','Organic Search','7,155','2','2016','2/1/2016 12:00:00 AM'
+)
+                                
+9/11/2016 8:38:06 PM: insert into tblBrandGoogleAanalyticsData 
+                                  (brand,group_field,subgroup_id, subgroup_field, name, value, month, year, dt)
+                                    values('HURST-DRIVELINES','Acquisition','2','Bounce Rates','Organic Search','38.14%','2','2016','2/1/2016 12:00:00 AM'
+)
+                                
+9/11/2016 8:38:06 PM: insert into tblBrandGoogleAanalyticsData 
+                                  (brand,group_field,subgroup_id, subgroup_field, name, value, month, year, dt)
+                                    values('HURST-DRIVELINES','Acquisition','1','Sessions','Direct','1,779','2','2016','2/1/2016 12:00:00 AM'
+)
+                                
+9/11/2016 8:38:06 PM: insert into tblBrandGoogleAanalyticsData 
+                                  (brand,group_field,subgroup_id, subgroup_field, name, value, month, year, dt)
+                                    values('HURST-DRIVELINES','Acquisition','2','Bounce Rates','Direct','49.86%','2','2016','2/1/2016 12:00:00 AM'
+)
+                                
+9/11/2016 8:38:06 PM: insert into tblBrandGoogleAanalyticsData 
+                                  (brand,group_field,subgroup_id, subgroup_field, name, value, month, year, dt)
+                                    values('HURST-DRIVELINES','Acquisition','1','Sessions','Referral','1,499','2','2016','2/1/2016 12:00:00 AM'
+)
+                                
+9/11/2016 8:38:06 PM: insert into tblBrandGoogleAanalyticsData 
+                                  (brand,group_field,subgroup_id, subgroup_field, name, value, month, year, dt)
+                                    values('HURST-DRIVELINES','Acquisition','2','Bounce Rates','Referral','46.56%','2','2016','2/1/2016 12:00:00 AM'
+)
+                                
+9/11/2016 8:38:06 PM: insert into tblBrandGoogleAanalyticsData 
+                                  (brand,group_field,subgroup_id, subgroup_field, name, value, month, year, dt)
+                                    values('HURST-DRIVELINES','Acquisition','1','Sessions','Social','20','2','2016','2/1/2016 12:00:00 AM'
+)
+                                
+9/11/2016 8:38:06 PM: insert into tblBrandGoogleAanalyticsData 
+                                  (brand,group_field,subgroup_id, subgroup_field, name, value, month, year, dt)
+                                    values('HURST-DRIVELINES','Acquisition','2','Bounce Rates','Social','50.00%','2','2016','2/1/2016 12:00:00 AM'
+)
+                                
+9/11/2016 8:38:06 PM: insert into tblBrandGoogleAanalyticsData 
+                                  (brand,group_field,subgroup_id, subgroup_field, name, value, month, year, dt)
+                                    values('HURST-DRIVELINES','Behavior','1','','Pageviews','39,434','2','2016','2/1/2016 12:00:00 AM'
+)
+                                
+9/11/2016 8:38:06 PM: insert into tblBrandGoogleAanalyticsData 
+                                  (brand,group_field,subgroup_id, subgroup_field, name, value, month, year, dt)
+                                    values('HURST-DRIVELINES','Behavior','1','','Unique Pageviews','28,748','2','2016','2/1/2016 12:00:00 AM'
+)
+                                
+9/11/2016 8:38:06 PM: insert into tblBrandGoogleAanalyticsData 
+                                  (brand,group_field,subgroup_id, subgroup_field, name, value, month, year, dt)
+                                    values('HURST-DRIVELINES','Behavior','1','','Avg. Time on Page','0:01:23','2','2016','2/1/2016 12:00:00 AM'
+)
+                                
+9/11/2016 8:38:06 PM: insert into tblBrandGoogleAanalyticsData 
+                                  (brand,group_field,subgroup_id, subgroup_field, name, value, month, year, dt)
+                                    values('HURST-DRIVELINES','Behavior','1','','Bounce Rate','41.36%','2','2016','2/1/2016 12:00:00 AM'
+)
+                                
+9/11/2016 8:38:06 PM: insert into tblBrandGoogleAanalyticsData 
+                                  (brand,group_field,subgroup_id, subgroup_field, name, value, month, year, dt)
+                                    values('HURST-DRIVELINES','Behavior','1','','% Exit','26.51%','2','2016','2/1/2016 12:00:00 AM'
+)
+                                
+9/11/2016 8:38:06 PM: insert into tblBrandGoogleAanalyticsData 
+                                  (brand,group_field,subgroup_id, subgroup_field, name, value, month, year, dt)
+                                    values('HURST-DRIVELINES','Site Speed','1','','Avg. Page Load Time (sec)','4.58','2','2016','2/1/2016 12:00:00 AM'
+)
+                                
+9/11/2016 8:38:06 PM: insert into tblBrandGoogleAanalyticsData 
+                                  (brand,group_field,subgroup_id, subgroup_field, name, value, month, year, dt)
+                                    values('HURST-DRIVELINES','Site Speed','1','','Avg. Redirection Time (sec)','0.24','2','2016','2/1/2016 12:00:00 AM'
+)
+                                
+9/11/2016 8:38:06 PM: insert into tblBrandGoogleAanalyticsData 
+                                  (brand,group_field,subgroup_id, subgroup_field, name, value, month, year, dt)
+                                    values('HURST-SHIFTERS','Audience','1','','Session','27,457','2','2016','2/1/2016 12:00:00 AM'
+)
+                                
+9/11/2016 8:38:06 PM: insert into tblBrandGoogleAanalyticsData 
+                                  (brand,group_field,subgroup_id, subgroup_field, name, value, month, year, dt)
+                                    values('HURST-SHIFTERS','Audience','1','','Users','21,389','2','2016','2/1/2016 12:00:00 AM'
+)
+                                
+9/11/2016 8:38:06 PM: insert into tblBrandGoogleAanalyticsData 
+                                  (brand,group_field,subgroup_id, subgroup_field, name, value, month, year, dt)
+                                    values('HURST-SHIFTERS','Audience','1','','Pageviews','117,834','2','2016','2/1/2016 12:00:00 AM'
+)
+                                
+9/11/2016 8:38:06 PM: insert into tblBrandGoogleAanalyticsData 
+                                  (brand,group_field,subgroup_id, subgroup_field, name, value, month, year, dt)
+                                    values('HURST-SHIFTERS','Audience','1','','Pages / Session','4.29','2','2016','2/1/2016 12:00:00 AM'
+)
+                                
+9/11/2016 8:38:06 PM: insert into tblBrandGoogleAanalyticsData 
+                                  (brand,group_field,subgroup_id, subgroup_field, name, value, month, year, dt)
+                                    values('HURST-SHIFTERS','Audience','1','','Average Session Duration','0:03:36','2','2016','2/1/2016 12:00:00 AM'
+)
+                                
+9/11/2016 8:38:06 PM: insert into tblBrandGoogleAanalyticsData 
+                                  (brand,group_field,subgroup_id, subgroup_field, name, value, month, year, dt)
+                                    values('HURST-SHIFTERS','Audience','1','','Bounce Rate','38.66%','2','2016','2/1/2016 12:00:00 AM'
+)
+                                
+9/11/2016 8:38:06 PM: insert into tblBrandGoogleAanalyticsData 
+                                  (brand,group_field,subgroup_id, subgroup_field, name, value, month, year, dt)
+                                    values('HURST-SHIFTERS','Audience','1','','% New Sessions','71.37%','2','2016','2/1/2016 12:00:00 AM'
+)
+                                
+9/11/2016 8:38:06 PM: insert into tblBrandGoogleAanalyticsData 
+                                  (brand,group_field,subgroup_id, subgroup_field, name, value, month, year, dt)
+                                    values('HURST-SHIFTERS','Country','1','Sessions','United States','21,964','2','2016','2/1/2016 12:00:00 AM'
+)
+                                
+9/11/2016 8:38:06 PM: insert into tblBrandGoogleAanalyticsData 
+                                  (brand,group_field,subgroup_id, subgroup_field, name, value, month, year, dt)
+                                    values('HURST-SHIFTERS','Country','1','Sessions','Canada','2,576','2','2016','2/1/2016 12:00:00 AM'
+)
+                                
+9/11/2016 8:38:06 PM: insert into tblBrandGoogleAanalyticsData 
+                                  (brand,group_field,subgroup_id, subgroup_field, name, value, month, year, dt)
+                                    values('HURST-SHIFTERS','Country','1','Sessions','Australia','599','2','2016','2/1/2016 12:00:00 AM'
+)
+                                
+9/11/2016 8:38:06 PM: insert into tblBrandGoogleAanalyticsData 
+                                  (brand,group_field,subgroup_id, subgroup_field, name, value, month, year, dt)
+                                    values('HURST-SHIFTERS','Country','1','Sessions','Germany','201','2','2016','2/1/2016 12:00:00 AM'
+)
+                                
+9/11/2016 8:38:06 PM: insert into tblBrandGoogleAanalyticsData 
+                                  (brand,group_field,subgroup_id, subgroup_field, name, value, month, year, dt)
+                                    values('HURST-SHIFTERS','New vs Returning Visitor','1','Sessions','New Visitor','19,610','2','2016','2/1/2016 12:00:00 AM'
+)
+                                
+9/11/2016 8:38:06 PM: insert into tblBrandGoogleAanalyticsData 
+                                  (brand,group_field,subgroup_id, subgroup_field, name, value, month, year, dt)
+                                    values('HURST-SHIFTERS','New vs Returning Visitor','2','Bounce Rates','New Visitor','37.13%','2','2016','2/1/2016 12:00:00 AM'
+)
+                                
+9/11/2016 8:38:06 PM: insert into tblBrandGoogleAanalyticsData 
+                                  (brand,group_field,subgroup_id, subgroup_field, name, value, month, year, dt)
+                                    values('HURST-SHIFTERS','New vs Returning Visitor','3','Avg. Session Duration','New Visitor','0:03:17','2','2016','2/1/2016 12:00:00 AM'
+)
+                                
+9/11/2016 8:38:06 PM: insert into tblBrandGoogleAanalyticsData 
+                                  (brand,group_field,subgroup_id, subgroup_field, name, value, month, year, dt)
+                                    values('HURST-SHIFTERS','New vs Returning Visitor','1','Sessions','Returning Visitor','7,847','2','2016','2/1/2016 12:00:00 AM'
+)
+                                
+9/11/2016 8:38:06 PM: insert into tblBrandGoogleAanalyticsData 
+                                  (brand,group_field,subgroup_id, subgroup_field, name, value, month, year, dt)
+                                    values('HURST-SHIFTERS','New vs Returning Visitor','2','Bounce Rates','Returning Visitor','42.49%','2','2016','2/1/2016 12:00:00 AM'
+)
+                                
+9/11/2016 8:38:06 PM: insert into tblBrandGoogleAanalyticsData 
+                                  (brand,group_field,subgroup_id, subgroup_field, name, value, month, year, dt)
+                                    values('HURST-SHIFTERS','New vs Returning Visitor','3','Avg. Session Duration','Returning Visitor','0:04:24','2','2016','2/1/2016 12:00:00 AM'
+)
+                                
+9/11/2016 8:38:06 PM: insert into tblBrandGoogleAanalyticsData 
+                                  (brand,group_field,subgroup_id, subgroup_field, name, value, month, year, dt)
+                                    values('HURST-SHIFTERS','Devices','1','Sessions','Desktop','14,426','2','2016','2/1/2016 12:00:00 AM'
+)
+                                
+9/11/2016 8:38:06 PM: insert into tblBrandGoogleAanalyticsData 
+                                  (brand,group_field,subgroup_id, subgroup_field, name, value, month, year, dt)
+                                    values('HURST-SHIFTERS','Devices','2','Bounce Rate','Desktop','32.42%','2','2016','2/1/2016 12:00:00 AM'
+)
+                                
+9/11/2016 8:38:06 PM: insert into tblBrandGoogleAanalyticsData 
+                                  (brand,group_field,subgroup_id, subgroup_field, name, value, month, year, dt)
+                                    values('HURST-SHIFTERS','Devices','3','Avg. Session Duration','Desktop','0:04:11','2','2016','2/1/2016 12:00:00 AM'
+)
+                                
+9/11/2016 8:38:06 PM: insert into tblBrandGoogleAanalyticsData 
+                                  (brand,group_field,subgroup_id, subgroup_field, name, value, month, year, dt)
+                                    values('HURST-SHIFTERS','Devices','1','Sessions','Mobile','10,330','2','2016','2/1/2016 12:00:00 AM'
+)
+                                
+9/11/2016 8:38:06 PM: insert into tblBrandGoogleAanalyticsData 
+                                  (brand,group_field,subgroup_id, subgroup_field, name, value, month, year, dt)
+                                    values('HURST-SHIFTERS','Devices','2','Bounce Rate','Mobile','46.50%','2','2016','2/1/2016 12:00:00 AM'
+)
+                                
+9/11/2016 8:38:06 PM: insert into tblBrandGoogleAanalyticsData 
+                                  (brand,group_field,subgroup_id, subgroup_field, name, value, month, year, dt)
+                                    values('HURST-SHIFTERS','Devices','3','Avg. Session Duration','Mobile','0:02:44','2','2016','2/1/2016 12:00:00 AM'
+)
+                                
+9/11/2016 8:38:06 PM: insert into tblBrandGoogleAanalyticsData 
+                                  (brand,group_field,subgroup_id, subgroup_field, name, value, month, year, dt)
+                                    values('HURST-SHIFTERS','Devices','1','Sessions','Tablet','2,701','2','2016','2/1/2016 12:00:00 AM'
+)
+                                
+9/11/2016 8:38:06 PM: insert into tblBrandGoogleAanalyticsData 
+                                  (brand,group_field,subgroup_id, subgroup_field, name, value, month, year, dt)
+                                    values('HURST-SHIFTERS','Devices','2','Bounce Rate','Tablet','42.02%','2','2016','2/1/2016 12:00:00 AM'
+)
+                                
+9/11/2016 8:38:06 PM: insert into tblBrandGoogleAanalyticsData 
+                                  (brand,group_field,subgroup_id, subgroup_field, name, value, month, year, dt)
+                                    values('HURST-SHIFTERS','Devices','3','Avg. Session Duration','Tablet','0:03:50','2','2016','2/1/2016 12:00:00 AM'
+)
+                                
+9/11/2016 8:38:06 PM: insert into tblBrandGoogleAanalyticsData 
+                                  (brand,group_field,subgroup_id, subgroup_field, name, value, month, year, dt)
+                                    values('HURST-SHIFTERS','Acquisition','1','Sessions','Organic Search','20,530','2','2016','2/1/2016 12:00:00 AM'
+)
+                                
+9/11/2016 8:38:06 PM: insert into tblBrandGoogleAanalyticsData 
+                                  (brand,group_field,subgroup_id, subgroup_field, name, value, month, year, dt)
+                                    values('HURST-SHIFTERS','Acquisition','2','Bounce Rates','Organic Search','35.30%','2','2016','2/1/2016 12:00:00 AM'
+)
+                                
+9/11/2016 8:38:06 PM: insert into tblBrandGoogleAanalyticsData 
+                                  (brand,group_field,subgroup_id, subgroup_field, name, value, month, year, dt)
+                                    values('HURST-SHIFTERS','Acquisition','1','Sessions','Direct','4,250','2','2016','2/1/2016 12:00:00 AM'
+)
+                                
+9/11/2016 8:38:06 PM: insert into tblBrandGoogleAanalyticsData 
+                                  (brand,group_field,subgroup_id, subgroup_field, name, value, month, year, dt)
+                                    values('HURST-SHIFTERS','Acquisition','2','Bounce Rates','Direct','48.96%','2','2016','2/1/2016 12:00:00 AM'
+)
+                                
+9/11/2016 8:38:06 PM: insert into tblBrandGoogleAanalyticsData 
+                                  (brand,group_field,subgroup_id, subgroup_field, name, value, month, year, dt)
+                                    values('HURST-SHIFTERS','Acquisition','1','Sessions','Referral','2,505','2','2016','2/1/2016 12:00:00 AM'
+)
+                                
+9/11/2016 8:38:06 PM: insert into tblBrandGoogleAanalyticsData 
+                                  (brand,group_field,subgroup_id, subgroup_field, name, value, month, year, dt)
+                                    values('HURST-SHIFTERS','Acquisition','2','Bounce Rates','Referral','46.96%','2','2016','2/1/2016 12:00:00 AM'
+)
+                                
+9/11/2016 8:38:06 PM: insert into tblBrandGoogleAanalyticsData 
+                                  (brand,group_field,subgroup_id, subgroup_field, name, value, month, year, dt)
+                                    values('HURST-SHIFTERS','Acquisition','1','Sessions','Social','122','2','2016','2/1/2016 12:00:00 AM'
+)
+                                
+9/11/2016 8:38:06 PM: insert into tblBrandGoogleAanalyticsData 
+                                  (brand,group_field,subgroup_id, subgroup_field, name, value, month, year, dt)
+                                    values('HURST-SHIFTERS','Acquisition','2','Bounce Rates','Social','68.03%','2','2016','2/1/2016 12:00:00 AM'
+)
+                                
+9/11/2016 8:38:06 PM: insert into tblBrandGoogleAanalyticsData 
+                                  (brand,group_field,subgroup_id, subgroup_field, name, value, month, year, dt)
+                                    values('HURST-SHIFTERS','Acquisition','1','Sessions','Email','50','2','2016','2/1/2016 12:00:00 AM'
+)
+                                
+9/11/2016 8:38:06 PM: insert into tblBrandGoogleAanalyticsData 
+                                  (brand,group_field,subgroup_id, subgroup_field, name, value, month, year, dt)
+                                    values('HURST-SHIFTERS','Acquisition','2','Bounce Rates','Email','56.00%','2','2016','2/1/2016 12:00:00 AM'
+)
+                                
+9/11/2016 8:38:06 PM: insert into tblBrandGoogleAanalyticsData 
+                                  (brand,group_field,subgroup_id, subgroup_field, name, value, month, year, dt)
+                                    values('HURST-SHIFTERS','Behavior','1','','Pageviews','117,834','2','2016','2/1/2016 12:00:00 AM'
+)
+                                
+9/11/2016 8:38:06 PM: insert into tblBrandGoogleAanalyticsData 
+                                  (brand,group_field,subgroup_id, subgroup_field, name, value, month, year, dt)
+                                    values('HURST-SHIFTERS','Behavior','1','','Unique Pageviews','95,727','2','2016','2/1/2016 12:00:00 AM'
+)
+                                
+9/11/2016 8:38:06 PM: insert into tblBrandGoogleAanalyticsData 
+                                  (brand,group_field,subgroup_id, subgroup_field, name, value, month, year, dt)
+                                    values('HURST-SHIFTERS','Behavior','1','','Avg. Time on Page','0:01:06','2','2016','2/1/2016 12:00:00 AM'
+)
+                                
+9/11/2016 8:38:06 PM: insert into tblBrandGoogleAanalyticsData 
+                                  (brand,group_field,subgroup_id, subgroup_field, name, value, month, year, dt)
+                                    values('HURST-SHIFTERS','Behavior','1','','Bounce Rate','38.66%','2','2016','2/1/2016 12:00:00 AM'
+)
+                                
+9/11/2016 8:38:06 PM: insert into tblBrandGoogleAanalyticsData 
+                                  (brand,group_field,subgroup_id, subgroup_field, name, value, month, year, dt)
+                                    values('HURST-SHIFTERS','Behavior','1','','% Exit','23.30%','2','2016','2/1/2016 12:00:00 AM'
+)
+                                
+9/11/2016 8:38:06 PM: insert into tblBrandGoogleAanalyticsData 
+                                  (brand,group_field,subgroup_id, subgroup_field, name, value, month, year, dt)
+                                    values('HURST-SHIFTERS','Site Speed','1','','Avg. Page Load Time (sec)','10.28','2','2016','2/1/2016 12:00:00 AM'
+)
+                                
+9/11/2016 8:38:06 PM: insert into tblBrandGoogleAanalyticsData 
+                                  (brand,group_field,subgroup_id, subgroup_field, name, value, month, year, dt)
+                                    values('HURST-SHIFTERS','Site Speed','1','','Avg. Redirection Time (sec)','0.29','2','2016','2/1/2016 12:00:00 AM'
+)
+                                
+9/11/2016 8:38:06 PM: insert into tblBrandGoogleAanalyticsData(brand,subgroup_id, month, year) values('FLOWMASTERMUFFLERS','1','2','2016')
+9/11/2016 8:38:06 PM: insert into tblBrandGoogleAanalyticsData(brand,subgroup_id, month, year) values('FLOWMASTERMUFFLERS','2','2','2016')
+9/11/2016 8:38:06 PM: insert into tblBrandGoogleAanalyticsData(brand,subgroup_id, month, year) values('FLOWMASTERMUFFLERS','3','2','2016')

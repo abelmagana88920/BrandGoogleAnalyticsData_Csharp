@@ -114,7 +114,7 @@ namespace BrandGoogleAnalyticsData.Controllers
             localPathwofile = localPath + "\\..\\App_Data\\extracts";
         }
 
-        public JsonResult GAnalytics(string path, int month, int year)
+        public JsonResult GAnalytics(string path, string orig_filename, int month, int year, DateTime dt)
         {
             //string path = "C:\\Users\\Abel\\Downloads\\AugustAnalytics\\BMRACING.xlsx";
             var _app = new Excel.Application();
@@ -216,14 +216,15 @@ namespace BrandGoogleAnalyticsData.Controllers
                                 }
                             }
 
-                            string fileName = Path.GetFileNameWithoutExtension(path);
+                            string fileName = Path.GetFileNameWithoutExtension(orig_filename);
 
                             //cell_data += group_field + index_row + ":" + index_column + " " + text_value;
                             if (insert && value != "")
                             {
                                 Library.Execute(@"insert into tblBrandGoogleAanalyticsData 
-                                  (brand,group_field,subgroup_id, subgroup_field, name, value, month, year)
-                                    values('" + fileName + "','" + group_field + "','" + (index_column - 1) + "','" + subgroup_field_text + "','" + name + "','" + value + "','" + month + "','" + year + @"')
+                                  (brand,group_field,subgroup_id, subgroup_field, name, value, month, year, dt)
+                                    values('" + fileName + "','" + group_field + "','" + (index_column - 1) + "','" + subgroup_field_text + "','" + name + "','" + value + "','" + month + "','" + year + "','"+dt.Date+@"'
+)
                                 ");
                                 // cell_data += "group_field: " + group_field + " subgroup_field:(" + (index_column - 1) + ")" + subgroup_field_text + " " + "name: " + name + " " + value;
                             }
@@ -277,27 +278,52 @@ namespace BrandGoogleAnalyticsData.Controllers
             // string extractPath = @"C:\\Users\\Abel\\Downloads\\extract";
             string files = "", extract_files_path = "";
             string content = @"";
-            string filenameonly = "";
+            string filenameonly_text = "";
+            string filenameonly ="";
+            string date_parameter = "";
+            string[] brand = {"BMRACING","DINANCARS","HURST-DRIVELINES","HURST-SHIFTERS","FLOWMASTERMUFFLERS"};
 
             Library.Execute("delete from tblBrandGoogleAanalyticsData where month='"+month+"' and year='"+year+"'");
 
-           /* try
-            {*/
+          /*  try
+            { */
                
                 using (ZipArchive archive = ZipFile.OpenRead(zipPath))
                 {
                     bool havingexcel_files = false;
+
+                    
                     foreach (ZipArchiveEntry entry in archive.Entries)
                     {
+
                         if (entry.FullName.EndsWith(".xlsx", StringComparison.OrdinalIgnoreCase))
                         {
                             havingexcel_files = true;
 
-                            filenameonly = Path.GetFileName(entry.FullName);
+                            filenameonly_text = Path.GetFileName(entry.FullName);
 
+                            string[] file_arr = filenameonly_text.Split(' ');
+                            
+
+                            if (file_arr.Length <= 2) // name
+                            {
+                                filenameonly = file_arr[0];
+                                if (file_arr.Length == 2)
+                                    date_parameter = Path.GetFileNameWithoutExtension(file_arr[1]);
+                                else
+                                    date_parameter = year + "-"+ month + "-" + "1";
+                            }
+                          //  Library.WriteErrorLog(date_parameter);
+                            DateTime dt = DateTime.ParseExact(date_parameter, "yyyy-M-d", System.Globalization.CultureInfo.InvariantCulture);
 
                             files += filenameonly;
                             extract_files_path = extractPath + "\\" + month + "-"+ year + "-" + filenameonly;
+                            string orig_filename = filenameonly;
+
+                            //purpose: to remove an array element that exist
+                            if (brand.Contains(Path.GetFileNameWithoutExtension(orig_filename)))
+                                brand = brand.Except(new string[] { Path.GetFileNameWithoutExtension(orig_filename) }).ToArray();
+                            
 
                             if ((System.IO.File.Exists(extract_files_path)))
                             {
@@ -308,10 +334,20 @@ namespace BrandGoogleAnalyticsData.Controllers
                             {
                                 entry.ExtractToFile(Path.Combine(extractPath, month + "-" + year + "-" + filenameonly));
                                 //content += extract_files_path;
-                                content += new JavaScriptSerializer().Serialize(GAnalytics(extract_files_path, month, year).Data);
+                                content += new JavaScriptSerializer().Serialize(GAnalytics(extract_files_path,orig_filename, month, year,dt).Data);
                             }
                         }
                     }
+
+                    foreach (var b in brand)
+                    {
+                        Library.Execute("insert into tblBrandGoogleAanalyticsData(brand,subgroup_id, month, year) values('"+b+"','"+1+"','"+month+"','"+year+"')");
+                        Library.Execute("insert into tblBrandGoogleAanalyticsData(brand,subgroup_id, month, year) values('" + b + "','" + 2 + "','" + month + "','" + year + "')");
+                        Library.Execute("insert into tblBrandGoogleAanalyticsData(brand,subgroup_id, month, year) values('" + b + "','" + 3 + "','" + month + "','" + year + "')");
+                  
+                    }
+
+
                     if (!havingexcel_files)
                     {
                         killProcessByName("Excel");
@@ -319,14 +355,16 @@ namespace BrandGoogleAnalyticsData.Controllers
                     } 
                 }
 
+              
+
                 killProcessByName("Excel");
                 return "success";
 
-            /* }
+           /*  }
           catch
             {
                 return "error";
-            } */
+            }  */
 
 
            
