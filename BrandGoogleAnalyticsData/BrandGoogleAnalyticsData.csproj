@@ -320,6 +320,7 @@
     <Content Include="Views\Customer\Datatables.cshtml" />
     <Content Include="Views\Upload.cshtml" />
     <Content Include="Views\Brand\Upload.cshtml" />
+    <Content Include="Views\Brand\Views.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

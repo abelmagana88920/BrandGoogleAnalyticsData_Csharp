@@ -1,6 +1,35 @@
 
 
-$(function(){
+$(function () {
+
+  
+
+    window.lnkView = function (id) {
+
+        $('#page-content').load('/Brand/Views/');
+        return false;
+    };
+
+    window.lnkDelBrand = function (month,year,brand) {
+        var answer = confirm("You are about to delete this record. Continue?");
+        var yourJsonObject = {
+            month: month,
+            year: year,
+            brand:brand
+        };
+
+        if (answer) {
+            $.post('/Brand/Delete/',
+                $.param(yourJsonObject, true)
+               ,
+               function (data, status) {
+                   if (status == "success") {
+                       sessionStorage.rowKeyStore = "{}";
+                       window.location.href = 'Upload';
+                   }
+               });
+        }
+    };
 
     var ul = $('#upload ul');
 
@@ -38,7 +67,7 @@ $(function(){
             data.context = tpl.appendTo(ul);
 
             // Initialize the knob plugin
-            tpl.find('input').knob();
+        
 
             // Listen for clicks on the cancel icon
             tpl.find('span').click(function(){
@@ -58,7 +87,7 @@ $(function(){
 			//("#btnSubmit").click(function () {
 					 var jqXHR = data.submit();
 			//}); 
-           
+					 //tpl.find('input').knob();
         },
 
         progress: function(e, data){

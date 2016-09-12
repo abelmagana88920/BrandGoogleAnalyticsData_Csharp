@@ -708,6 +708,9 @@
 			
 			 $('#browse').css("display", "block");
 			 $('#wait').css("display", "none");
+
+			 
+			
 			 
 			 options.context.find('p')
                          .append('');
@@ -716,6 +719,8 @@
             options.textStatus = textStatus;
             options.jqXHR = jqXHR;
             this._trigger('done', null, options);
+
+            $('#page-content').load('/Brand/Views/');
         },
 
         _onFail: function (jqXHR, textStatus, errorThrown, options) {

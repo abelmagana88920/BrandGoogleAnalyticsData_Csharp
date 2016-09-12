@@ -11,7 +11,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
   </PropertyGroup>
   <ItemGroup>
     <File Include="assets/css/style.css">
-      <publishTime>09/12/2016 07:35:01</publishTime>
+      <publishTime>09/12/2016 10:47:09</publishTime>
     </File>
     <File Include="assets/img/border-image.png">
       <publishTime>09/12/2016 07:35:54</publishTime>
@@ -20,7 +20,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>09/12/2016 07:35:54</publishTime>
     </File>
     <File Include="assets/js/jquery.fileupload.js">
-      <publishTime>09/12/2016 07:36:09</publishTime>
+      <publishTime>09/12/2016 10:05:17</publishTime>
     </File>
     <File Include="assets/js/jquery.iframe-transport.js">
       <publishTime>09/12/2016 07:36:09</publishTime>
@@ -32,13 +32,13 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>09/12/2016 07:36:09</publishTime>
     </File>
     <File Include="assets/js/script.js">
-      <publishTime>09/12/2016 07:36:09</publishTime>
+      <publishTime>09/12/2016 10:45:22</publishTime>
     </File>
     <File Include="bin/Antlr3.Runtime.dll">
       <publishTime>08/22/2016 15:23:29</publishTime>
     </File>
     <File Include="bin/BrandGoogleAnalyticsData.dll">
-      <publishTime>09/12/2016 07:37:16</publishTime>
+      <publishTime>09/12/2016 11:01:33</publishTime>
     </File>
     <File Include="bin/EntityFramework.dll">
       <publishTime>08/22/2016 15:23:29</publishTime>
@@ -93,6 +93,36 @@ by editing this MSBuild file. In order to learn more about this please visit htt
     </File>
     <File Include="bin/WebGrease.dll">
       <publishTime>08/22/2016 15:23:29</publishTime>
+    </File>
+    <File Include="Content/datatables/demo.css">
+      <publishTime>09/12/2016 07:43:14</publishTime>
+    </File>
+    <File Include="Content/datatables/jquery.dataTables.css">
+      <publishTime>09/12/2016 07:43:14</publishTime>
+    </File>
+    <File Include="Content/datatables/shCore.css">
+      <publishTime>09/12/2016 07:43:14</publishTime>
+    </File>
+    <File Include="Content/images/favicon.ico">
+      <publishTime>09/12/2016 07:43:40</publishTime>
+    </File>
+    <File Include="Content/images/Sorting icons.psd">
+      <publishTime>09/12/2016 07:43:40</publishTime>
+    </File>
+    <File Include="Content/images/sort_asc.png">
+      <publishTime>09/12/2016 07:43:40</publishTime>
+    </File>
+    <File Include="Content/images/sort_asc_disabled.png">
+      <publishTime>09/12/2016 07:43:40</publishTime>
+    </File>
+    <File Include="Content/images/sort_both.png">
+      <publishTime>09/12/2016 07:43:40</publishTime>
+    </File>
+    <File Include="Content/images/sort_desc.png">
+      <publishTime>09/12/2016 07:43:40</publishTime>
+    </File>
+    <File Include="Content/images/sort_desc_disabled.png">
+      <publishTime>09/12/2016 07:43:40</publishTime>
     </File>
     <File Include="Content/Site.css">
       <publishTime>09/05/2016 23:47:09</publishTime>
@@ -274,6 +304,24 @@ by editing this MSBuild file. In order to learn more about this please visit htt
     <File Include="packages.config">
       <publishTime>08/25/2016 16:39:34</publishTime>
     </File>
+    <File Include="Scripts/datatables/dataTables.fixedColumns.js">
+      <publishTime>09/12/2016 07:45:25</publishTime>
+    </File>
+    <File Include="Scripts/datatables/dataTables.select.js">
+      <publishTime>09/12/2016 07:45:25</publishTime>
+    </File>
+    <File Include="Scripts/datatables/demo.js">
+      <publishTime>09/12/2016 07:45:25</publishTime>
+    </File>
+    <File Include="Scripts/datatables/jquery-1.12.3.min.js">
+      <publishTime>09/12/2016 07:45:25</publishTime>
+    </File>
+    <File Include="Scripts/datatables/jquery.dataTables.js">
+      <publishTime>09/12/2016 07:45:25</publishTime>
+    </File>
+    <File Include="Scripts/datatables/shCore.js">
+      <publishTime>09/12/2016 07:45:25</publishTime>
+    </File>
     <File Include="Scripts/inventory-app.js">
       <publishTime>09/05/2016 23:52:07</publishTime>
     </File>
@@ -320,7 +368,10 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>08/22/2016 15:23:29</publishTime>
     </File>
     <File Include="Views/Brand/Upload.cshtml">
-      <publishTime>09/09/2016 01:10:06</publishTime>
+      <publishTime>09/12/2016 10:49:29</publishTime>
+    </File>
+    <File Include="Views/Brand/Views.cshtml">
+      <publishTime>09/12/2016 11:00:18</publishTime>
     </File>
     <File Include="Views/Customer/Create.cshtml">
       <publishTime>09/05/2016 23:21:55</publishTime>
@@ -356,7 +407,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>08/22/2016 15:23:29</publishTime>
     </File>
     <File Include="Web.config">
-      <publishTime>09/12/2016 07:37:17</publishTime>
+      <publishTime>09/12/2016 11:01:34</publishTime>
     </File>
   </ItemGroup>
 </Project>

@@ -17,6 +17,7 @@ using System.Data;
 using System.Data.Objects;
 using System.Data.Entity;
 using System.Data.Entity.Infrastructure;
+using System.Data.SqlClient;
 
 
 //using InventoryFeed.Models.ViewModel;
@@ -39,6 +40,29 @@ namespace BrandGoogleAnalyticsData.Controllers
         public ActionResult Upload()
         {
             return View();
+        }
+
+
+        [HttpPost]
+        public JsonResult Delete()
+        {
+            string month = Request["month"];
+            string year = Request["year"];
+            string brand = Request["brand"];
+
+            Library.Execute("DELETE from tblBrandGoogleAanalyticsData WHERE month ='"+month+"' and year='"+year+"' and brand='"+brand+"'");
+
+            return Json(new { message = "deleted" });
+        }
+
+        public ActionResult Views()
+        {
+            var feed = (from m in db.tblBrandGoogleAanalyticsDatas
+                        select m).OrderByDescending(x => x.month).DistinctBy(d => new {d.month,d.year,d.brand}).ToList();
+
+   
+            
+            return View(feed); 
         }
 
         [HttpPost]

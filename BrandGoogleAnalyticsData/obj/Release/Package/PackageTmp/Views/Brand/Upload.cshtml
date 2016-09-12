@@ -3,7 +3,22 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
+ 
 
+<!-- The main CSS file -->
+		<link href="../assets/css/style.css" rel="stylesheet" />
+		<script src="../assets/js/jquery.knob.js"></script>
+		<!-- jQuery File Upload Dependencies -->
+		<script src="../assets/js/jquery.ui.widget.js"></script>
+		<script src="../assets/js/jquery.iframe-transport.js"></script>
+		<script src="../assets/js/jquery.fileupload.js"></script>
+		<!-- Our main JS file -->
+		<script src="../assets/js/script.js"></script>
+<body onload="lnkView('')">
+
+   
+
+<div id="page-content"></div>
 <form id="upload" action="/Brand/UploadSubmit" method="post" enctype="multipart/form-data">
     <div id="drop">
               <input type="textbox" id="valid" value="false"  />
@@ -24,13 +39,6 @@
    
 </form>
 
+</body>
 
-		<!-- The main CSS file -->
-		<link href="../assets/css/style.css" rel="stylesheet" />
-		<script src="../assets/js/jquery.knob.js"></script>
-		<!-- jQuery File Upload Dependencies -->
-		<script src="../assets/js/jquery.ui.widget.js"></script>
-		<script src="../assets/js/jquery.iframe-transport.js"></script>
-		<script src="../assets/js/jquery.fileupload.js"></script>
-		<!-- Our main JS file -->
-		<script src="../assets/js/script.js"></script>
+		
