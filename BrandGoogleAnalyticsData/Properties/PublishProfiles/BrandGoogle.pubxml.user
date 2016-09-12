@@ -10,11 +10,35 @@ by editing this MSBuild file. In order to learn more about this please visit htt
     <TimeStampOfAssociatedLegacyPublishXmlFile />
   </PropertyGroup>
   <ItemGroup>
+    <File Include="assets/css/style.css">
+      <publishTime>09/12/2016 07:35:01</publishTime>
+    </File>
+    <File Include="assets/img/border-image.png">
+      <publishTime>09/12/2016 07:35:54</publishTime>
+    </File>
+    <File Include="assets/img/icons.png">
+      <publishTime>09/12/2016 07:35:54</publishTime>
+    </File>
+    <File Include="assets/js/jquery.fileupload.js">
+      <publishTime>09/12/2016 07:36:09</publishTime>
+    </File>
+    <File Include="assets/js/jquery.iframe-transport.js">
+      <publishTime>09/12/2016 07:36:09</publishTime>
+    </File>
+    <File Include="assets/js/jquery.knob.js">
+      <publishTime>09/12/2016 07:36:09</publishTime>
+    </File>
+    <File Include="assets/js/jquery.ui.widget.js">
+      <publishTime>09/12/2016 07:36:09</publishTime>
+    </File>
+    <File Include="assets/js/script.js">
+      <publishTime>09/12/2016 07:36:09</publishTime>
+    </File>
     <File Include="bin/Antlr3.Runtime.dll">
       <publishTime>08/22/2016 15:23:29</publishTime>
     </File>
     <File Include="bin/BrandGoogleAnalyticsData.dll">
-      <publishTime>09/11/2016 21:03:10</publishTime>
+      <publishTime>09/12/2016 07:37:16</publishTime>
     </File>
     <File Include="bin/EntityFramework.dll">
       <publishTime>08/22/2016 15:23:29</publishTime>
@@ -332,7 +356,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>08/22/2016 15:23:29</publishTime>
     </File>
     <File Include="Web.config">
-      <publishTime>09/11/2016 21:19:21</publishTime>
+      <publishTime>09/12/2016 07:37:17</publishTime>
     </File>
   </ItemGroup>
 </Project>
