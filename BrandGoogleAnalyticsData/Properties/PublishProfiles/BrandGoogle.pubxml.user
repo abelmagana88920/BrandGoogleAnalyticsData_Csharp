@@ -32,7 +32,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>09/12/2016 07:36:09</publishTime>
     </File>
     <File Include="assets/js/script.js">
-      <publishTime>09/12/2016 10:45:22</publishTime>
+      <publishTime>09/12/2016 11:32:14</publishTime>
     </File>
     <File Include="bin/Antlr3.Runtime.dll">
       <publishTime>08/22/2016 15:23:29</publishTime>
@@ -368,7 +368,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>08/22/2016 15:23:29</publishTime>
     </File>
     <File Include="Views/Brand/Upload.cshtml">
-      <publishTime>09/12/2016 10:49:29</publishTime>
+      <publishTime>09/12/2016 11:32:14</publishTime>
     </File>
     <File Include="Views/Brand/Views.cshtml">
       <publishTime>09/12/2016 11:00:18</publishTime>
@@ -407,7 +407,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>08/22/2016 15:23:29</publishTime>
     </File>
     <File Include="Web.config">
-      <publishTime>09/12/2016 11:01:34</publishTime>
+      <publishTime>09/12/2016 11:32:54</publishTime>
     </File>
   </ItemGroup>
 </Project>

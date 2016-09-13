@@ -2,7 +2,10 @@
 
 $(function () {
 
-  
+    window.onload = function (e) {
+        $('#page-content').load('/Brand/Views/');
+        return false;
+    };
 
     window.lnkView = function (id) {
 

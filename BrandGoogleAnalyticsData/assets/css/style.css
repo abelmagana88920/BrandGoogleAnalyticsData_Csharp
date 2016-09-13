@@ -91,6 +91,15 @@ section, footer, header, aside{
     line-height:1;
 }
 
+#drop a#ssrsreport {
+   background-color: #007a32;
+}
+
+#drop a#wait {
+   background-color: #503296;
+   
+}
+
 #drop a:hover{
     background-color:#0986a3;
 }
